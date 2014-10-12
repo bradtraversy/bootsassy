@@ -1,0 +1,424 @@
+/* Icons */
+
+.fa {
+  margin-bottom:3px;
+  margin-right:5px;
+}
+
+.fa-1{
+  font-size:1.3em;
+}
+
+.fa-2 {
+  font-size: 2em;
+}
+
+.fa-3 {
+  font-size: 4em;
+}
+
+.fa-4 {
+  font-size: 5em;
+}
+
+.fa-5 {
+  font-size: 12em;
+}
+
+.fa-6 {
+  font-size: 20em;
+}
+
+.fa-7 {
+  font-size: 24em;
+}
+
+.fa-1,
+.fa-2,
+.fa-3,
+.fa-4,
+.fa-5,
+.fa-6 {
+  margin-right: 0.07142857em;
+}
+
+.fa-primary{
+	color:$primary-color;
+}
+.fa-secondary{
+	color:$secondary-color;
+}
+.fa-dark{
+	color:$dark-color;
+}
+.fa-light{
+	color:darken($light-color,10%);
+}
+.fa-success{
+	color:$success-color;
+}
+.fa-info-icon{
+	color:$info-color;
+}
+.fa-warning-icon{
+	color:$warning-color;
+}
+.fa-danger{
+	color:$danger-color;
+}
+
+
+/* Square Fill */
+
+.fa-square-fill {
+	padding: 15px 18px;
+  display: inline-block;
+  @include border-radius(0px);
+  background:#000;
+  color:#fff;
+}
+
+.fa-square-fill-primary{
+  @extend .fa-square-fill;
+  background:$primary-color;
+}
+
+.fa-square-fill-secondary{
+  @extend .fa-square-fill;
+  background:$secondary-color;
+}
+
+.fa-square-fill-dark{
+  @extend .fa-square-fill;
+  background:$dark-color;
+}
+
+.fa-square-fill-light{
+  @extend .fa-square-fill;
+  background:darken($light-color,10%);
+}
+
+.fa-square-fill-success{
+  @extend .fa-square-fill;
+  background:$success-color;
+}
+
+.fa-square-fill-info{
+  @extend .fa-square-fill;
+  background:$info-color;
+}
+
+.fa-square-fill-warning{
+  @extend .fa-square-fill;
+  background:$warning-color;
+}
+
+.fa-square-fill-danger{
+  @extend .fa-square-fill;
+  background:$danger-color;
+}
+
+
+/* Square Border */
+
+.fa-square-border {
+  padding: 15px 18px;
+  display: inline-block;
+  @include border-radius(0px);
+  @include add-border(1px,#000,all);
+  background:transparent;
+  color:#000;
+}
+
+.fa-square-border-primary {
+  @extend .fa-square-border;
+  background:transparent;
+  border-color:$primary-color;
+  color:$primary-color;
+}
+
+.fa-square-border-secondary{
+  @extend .fa-square-border;
+  background:transparent;
+  border-color:$secondary-color;
+  color:$secondary-color;
+}
+
+.fa-square-border-dark {
+  @extend .fa-square-border;
+  background:transparent;
+  border-color:$dark-color;
+  color:$dark-color;
+}
+
+.fa-square-border-light {
+  @extend .fa-square-border;
+  background:transparent;
+  border-color:darken($light-color,10%);
+  color:darken($light-color,10%);
+}
+
+.fa-square-border-success {
+  @extend .fa-square-border;
+  background:transparent;
+  border-color:$success-color;
+  color:$success-color;
+}
+
+.fa-square-border-info {
+  @extend .fa-square-border;
+  background:transparent;
+  border-color:$info-color;
+  color:$info-color;
+}
+
+.fa-square-border-warning{
+  @extend .fa-square-border;
+  background:transparent;
+  border-color:$warning-color;
+  color:$warning-color;
+}
+
+.fa-square-border-danger{
+  @extend .fa-square-border;
+  background:transparent;
+  border-color:$danger-color;
+  color:$danger-color;
+}
+
+
+/* Rounded Fill */
+
+.fa-rounded-fill {
+  padding: 15px 18px;
+  display: inline-block;
+  @include border-radius(5px);
+  background:#000;
+  color:#fff;
+}
+
+.fa-rounded-fill-primary{
+  @extend .fa-rounded-fill;
+  background:$primary-color;
+}
+
+.fa-rounded-fill-secondary{
+  @extend .fa-rounded-fill;
+  background:$secondary-color;
+}
+
+.fa-rounded-fill-dark{
+  @extend .fa-rounded-fill;
+  background:$dark-color;
+}
+
+.fa-rounded-fill-light{
+  @extend .fa-rounded-fill;
+  background:darken($light-color,10%);
+}
+
+.fa-rounded-fill-success{
+  @extend .fa-rounded-fill;
+  background:$success-color;
+}
+
+.fa-rounded-fill-info{
+  @extend .fa-rounded-fill;
+  background:$info-color;
+}
+
+.fa-rounded-fill-warning{
+  @extend .fa-rounded-fill;
+  background:$warning-color;
+}
+
+.fa-rounded-fill-danger{
+  @extend .fa-rounded-fill;
+  background:$danger-color;
+}
+
+
+/* Rounded Border */
+
+.fa-rounded-border {
+  padding: 15px 18px;
+  display: inline-block;
+  @include border-radius(5px);
+  @include add-border(1px,#000,all);
+  background:transparent;
+  color:#000;
+}
+
+.fa-rounded-border-primary{
+  @extend .fa-rounded-border;
+  background:transparent;
+  border-color:$primary-color;
+  color:$primary-color;
+}
+
+.fa-rounded-border-secondary{
+  @extend .fa-rounded-border;
+  background:transparent;
+  border-color:$secondary-color;
+  color:$secondary-color;
+}
+
+.fa-rounded-border-dark{
+  @extend .fa-rounded-border;
+  background:transparent;
+  border-color:$dark-color;
+  color:$dark-color;
+}
+
+.fa-rounded-border-light{
+  @extend .fa-rounded-border;
+  background:transparent;
+  border-color:darken($light-color,10%);
+  color:darken($light-color,10%);
+}
+
+.fa-rounded-border-success{
+  @extend .fa-rounded-border;
+  background:transparent;
+  border-color:$success-color;
+  color:$success-color;
+}
+
+.fa-rounded-border-info{
+  @extend .fa-rounded-border;
+  background:transparent;
+  border-color:$info-color;
+  color:$info-color;
+}
+
+.fa-rounded-border-warning{
+  @extend .fa-rounded-border;
+  background:transparent;
+  border-color:$warning-color;
+  color:$warning-color;
+}
+
+.fa-rounded-border-danger{
+  @extend .fa-rounded-border;
+  background:transparent;
+  border-color:$danger-color;
+  color:$danger-color;
+}
+
+/* Circle Fill */
+
+.fa-circle-fill {
+  padding: 15px 18px;
+  display: inline-block;
+  @include border-radius(100px);
+  background:#000;
+  color:#fff;
+}
+
+.fa-circle-fill-primary{
+  @extend .fa-circle-fill;
+  background:$primary-color;
+}
+
+.fa-circle-fill-secondary{
+  @extend .fa-circle-fill;
+  background:$secondary-color;
+}
+
+.fa-circle-fill-dark{
+  @extend .fa-circle-fill;
+  background:$dark-color;
+}
+
+.fa-circle-fill-light{
+  @extend .fa-circle-fill;
+  background:darken($light-color,10%);
+}
+
+.fa-circle-fill-success{
+  @extend .fa-circle-fill;
+  background:$success-color;
+}
+
+.fa-circle-fill-info{
+  @extend .fa-circle-fill;
+  background:$info-color;
+}
+
+.fa-circle-fill-warning{
+  @extend .fa-circle-fill;
+  background:$warning-color;
+}
+
+.fa-circle-fill-danger{
+  @extend .fa-circle-fill;
+  background:$danger-color;
+}
+
+
+/* Circle Border */
+
+.fa-circle-border {
+  padding: 15px 18px;
+  display: inline-block;
+  @include border-radius(100px);
+  @include add-border(1px,#000,all);
+  background:transparent;
+  color:#000;
+}
+
+.fa-circle-border-primary{
+  @extend .fa-circle-border;
+  background:transparent;
+  border-color:$primary-color;
+  color:$primary-color;
+}
+
+.fa-circle-border-secondary{
+  @extend .fa-circle-border;
+  background:transparent;
+  border-color:$secondary-color;
+  color:$secondary-color;
+}
+
+.fa-circle-border-dark{
+  @extend .fa-circle-border;
+  background:transparent;
+  border-color:$dark-color;
+  color:$dark-color;
+}
+
+.fa-circle-border-light{
+  @extend .fa-circle-border;
+  background:transparent;
+  border-color:darken($light-color,10%);
+  color:darken($light-color,10%);
+}
+
+.fa-circle-border-success{
+  @extend .fa-circle-border;
+  background:transparent;
+  border-color:$success-color;
+  color:$success-color;
+}
+
+.fa-circle-border-info{
+  @extend .fa-circle-border;
+  background:transparent;
+  border-color:$info-color;
+  color:$info-color;
+}
+
+.fa-circle-border-warning{
+  @extend .fa-circle-border;
+  background:transparent;
+  border-color:$warning-color;
+  color:$warning-color;
+}
+
+.fa-circle-border-danger{
+  @extend .fa-circle-border;
+  background:transparent;
+  border-color:$danger-color;
+  color:$danger-color;
+}

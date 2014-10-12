@@ -1,0 +1,68 @@
+@if $reset == true {
+	*{
+		@include reset;
+	}
+}
+
+/* Padding Classes */
+
+.padding-0{@include set-padding(0px,all);}
+.padding-5{@include set-padding(5px,all);}
+.padding-10{@include set-padding(10px,all);}
+.padding-20{@include set-padding(20px,all);}
+.padding-30{@include set-padding(30px,all);}
+.padding-40{@include set-padding(40px,all);}
+.padding-50{@include set-padding(50px,all);}
+
+.padding-top-bottom-0{@include set-padding(0px,top-bottom);}
+.padding-top-bottom-10{@include set-padding(10px,top-bottom);}
+.padding-top-bottom-20{@include set-padding(20px,top-bottom);}
+.padding-top-bottom-30{@include set-padding(30px,top-bottom);}
+.padding-top-bottom-40{@include set-padding(40px,top-bottom);}
+.padding-top-bottom-50{@include set-padding(50px,top-bottom);}
+
+.padding-top-0{@include set-padding(0px,top);}
+.padding-top-10{@include set-padding(10px,top);}
+.padding-top-20{@include set-padding(20px,top);}
+.padding-top-30{@include set-padding(30px,top);}
+.padding-top-40{@include set-padding(40px,top);}
+.padding-top-50{@include set-padding(50px,top);}
+
+.padding-bottom-0{@include set-padding(0px,bottom);}
+.padding-bottom-10{@include set-padding(10px,bottom);}
+.padding-bottom-20{@include set-padding(20px,bottom);}
+.padding-bottom-30{@include set-padding(30px,bottom);}
+.padding-bottom-40{@include set-padding(40px,bottom);}
+.padding-bottom-50{@include set-padding(50px,bottom);}
+
+
+/* Margin Classes */
+
+.margin-0{@include set-margin(0px,all);}
+.margin-5{@include set-margin(5px,all);}
+.margin-10{@include set-margin(10px,all);}
+.margin-20{@include set-margin(20px,all);}
+.margin-30{@include set-margin(30px,all);}
+.margin-40{@include set-margin(40px,all);}
+.margin-50{@include set-margin(50px,all);}
+
+.margin-top-bottom-0{@include set-margin(0px,top-bottom);}
+.margin-top-bottom-10{@include set-margin(10px,top-bottom);}
+.margin-top-bottom-20{@include set-margin(20px,top-bottom);}
+.margin-top-bottom-30{@include set-margin(30px,top-bottom);}
+.margin-top-bottom-40{@include set-margin(40px,top-bottom);}
+.margin-top-bottom-50{@include set-margin(50px,top-bottom);}
+
+.margin-top-0{@include set-margin(0px,top);}
+.margin-top-10{@include set-margin(10px,top);}
+.margin-top-20{@include set-margin(20px,top);}
+.margin-top-30{@include set-margin(30px,top);}
+.margin-top-40{@include set-margin(40px,top);}
+.margin-top-50{@include set-margin(50px,top);}
+
+.margin-bottom-0{@include set-margin(0px,bottom);}
+.margin-bottom-10{@include set-margin(10px,bottom);}
+.margin-bottom-20{@include set-margin(20px,bottom);}
+.margin-bottom-30{@include set-margin(30px,bottom);}
+.margin-bottom-40{@include set-margin(40px,bottom);}
+.margin-bottom-50{@include set-margin(50px,bottom);}

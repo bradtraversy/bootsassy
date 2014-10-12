@@ -1,0 +1,352 @@
+
+/* Blocks */
+
+.block{
+	@include box-sizing('border-box');
+	@include background-color($default-block-color);
+	padding:$block-padding;
+	margin-bottom:20px;
+
+	h1,h2,h3,h4,h5,h6{
+		@include reset;
+		line-height:1.9em;
+		margin-bottom:5px;
+	}
+}
+
+.block img{
+	width:100%;
+}
+
+.block-rounded{
+	@include border-radius(10px);
+}
+
+/* Block Primary */
+
+.block-primary{
+	@extend .block;
+	@include background-color($primary-color);
+}
+
+/* Block Secondary */
+
+.block-secondary{
+	@extend .block;
+	@include background-color($secondary-color);
+}
+
+
+/* Block Light */
+
+.block-light{
+	@extend .block;
+	@include background-color($light-color);
+}
+
+
+/* Block Dark */
+
+.block-dark{
+	@extend .block;
+	@include background-color($dark-color);
+}
+
+/* Block Success */
+
+.block-success{
+	@extend .block;
+	@include background-color($success-color);
+}
+
+/* Block Info */
+
+.block-info{
+	@extend .block;
+	@include background-color($info-color);
+}
+
+/* Block Warning */
+
+.block-warning{
+	@extend .block;
+	@include background-color($warning-color);
+}
+
+/* Block Danger */
+
+.block-danger{
+	@extend .block;
+	@include background-color($danger-color);
+}
+
+
+/* Block Variations */
+
+.block-center{
+	@extend .block;
+	text-align: center;
+}
+
+.block-round{
+	@extend .block;
+	@include border-radius(10px);
+}
+
+.block-border{
+	@include add-border(1px, #ccc, all);
+}
+
+.block-no-padding{
+	padding:0;
+}
+
+
+/* Block Titles */
+
+.block-title-1 h1,
+.block-title-1 h2,
+.block-title-1 h3{
+	@include background-color($primary-color);
+	background:darken($primary-color, 3.5%);
+	padding-left:15px;
+}
+
+
+.block-title-2 h1,
+.block-title-2 h2,
+.block-title-2 h3{
+	@include background-color($secondary-color);
+	background:darken($secondary-color, 6.5%);
+	padding-left:15px;
+}
+
+.block-title-3 h1,
+.block-title-3 h2,
+.block-title-3 h3{
+	@include background-color($light-color);
+	background:darken($light-color, 6.5%);
+	padding-left:15px;
+}
+
+
+.block-title-4 h1,
+.block-title-4 h2,
+.block-title-4 h3{
+	@include background-color($dark-color);
+	background:darken($dark-color, 6.5%);
+	padding-left:15px;
+}
+
+.block-title-5 h1,
+.block-title-5 h2,
+.block-title-5 h3{
+	@include add-border(3px,$primary-color,'bottom');
+	border-color:darken($primary-color, 3.5%);
+	color:darken($primary-color, 3.5%);
+}
+
+
+.block-title-6 h1,
+.block-title-6 h2,
+.block-title-6 h3{
+	@include add-border(3px,$secondary-color,'bottom');
+	border-color:darken($secondary-color, 3.5%);
+	color:darken($secondary-color, 3.5%);
+}
+
+.block-title-7 h1,
+.block-title-7 h2,
+.block-title-7 h3{
+	@include add-border(3px,$light-color,'bottom');
+	border-color:darken($light-color, 20%);
+	color:darken($light-color, 20%);
+}
+
+
+.block-title-8 h3,
+.block-title-8 h3,
+.block-title-8 h3{
+	@include add-border(3px,$dark-color,'bottom');
+	border-color:darken($dark-color, 3.5%);
+	color:darken($dark-color, 3.5%);
+}
+
+
+/* Icon Blocks */
+
+.block-icon-center{
+	@extend .block;
+	text-align: center;
+}
+
+.block-icon-left {
+	@extend .block;
+	overflow:auto;
+
+	h1,h2,h3,h4,h5,h6{
+		margin:0;
+		padding:0;
+	}
+
+	.icon-content{
+		float:left;
+		width:70%;
+	}
+
+	.icon{
+		float:left;
+		width:30%;
+		margin-top:10px;
+	}
+}
+
+.block-icon-right {
+	@extend .block;
+	overflow:auto;
+
+	h1,h2,h3,h4,h5,h6{
+		margin:0;
+		padding:0;
+	}
+
+	.icon-content{
+		float:left;
+		width:70%;
+	}
+
+	.icon{
+		float:right;
+		width:30%;
+		margin-top:10px;
+	}
+}
+
+.block-icon-small{
+	@extend .block;
+	.fa{
+		font-size:1.6em;
+		margin-right:10px;
+		vertical-align: middle;
+	}
+}
+
+.block-icon-small{ 
+	.fa-bg{
+		font-size:1.2em;
+		padding: 7px 10px;
+    	margin-right:5px;
+	}
+}
+
+.block-icon-large-1{
+	@extend .block;
+	@include add-border(1px, #ccc, all);
+	text-align: center;
+	padding:0;
+	color:#666;
+
+	.fa{
+		font-size:8em;
+		margin:20px;
+	}
+
+	h3{
+		@include background-color(#666);
+		color:#fff;
+		margin:0;
+	}
+
+}
+
+.block-icon-large-1-primary{
+	@extend .block-icon-large-1;
+	color:$primary-color;
+	border-color:$primary-color;
+
+	h3{
+		@include background-color($primary-color);
+	}
+}
+
+.block-icon-large-1-secondary{
+	@extend .block-icon-large-1;
+	color:$secondary-color;
+	border-color:$secondary-color;
+
+	h3{
+		@include background-color($secondary-color);
+	}
+}
+
+.block-icon-large-1-dark{
+	@extend .block-icon-large-1;
+	color:$dark-color;
+	border-color:$dark-color;
+
+	h3{
+		@include background-color($dark-color);
+	}
+}
+
+.block-icon-large-1-light{
+	@extend .block-icon-large-1;
+	color:$light-color;
+	border-color:$light-color;
+
+	h3{
+		@include background-color($light-color);
+	}
+}
+
+.block-icon-large-2{
+	@extend .block;
+	text-align: center;
+	color:#666;
+	background:0;
+
+	.fa{
+		font-size:8em;
+	}
+
+	h3{
+		color:#666;
+	}
+
+}
+
+.block-icon-large-2-primary{
+	@extend .block-icon-large-2;
+	color:$primary-color;
+
+	h3{
+		color:$primary-color;
+	}
+}
+
+.block-icon-large-2-secondary{
+	@extend .block-icon-large-2;
+	color:$secondary-color;
+
+	h3{
+		color:$secondary-color;
+	}
+}
+
+.block-icon-large-2-dark{
+	@extend .block-icon-large-2;
+	color:$dark-color;
+
+	h3{
+		color:$dark-color;
+	}
+}
+
+.block-icon-large-2-light{
+	@extend .block-icon-large-2;
+	color:$light-color;
+
+	h3{
+		color:$light-color;
+	}
+}

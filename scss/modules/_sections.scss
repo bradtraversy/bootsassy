@@ -1,0 +1,141 @@
+
+/* Sections */
+
+section{
+	padding:30px 0 30px 0;
+	line-height:1.7em;
+}
+
+section h2{margin-top:5px;}
+
+
+/* Section - Primary */
+.section-primary{
+	@include background-color($primary-color);
+}
+
+.section-primary-a{
+	@extend .section-primary;
+	@include add-border($section-border-width, $secondary-color, 'top-bottom');
+}
+
+.section-primary-b{
+	@extend .section-primary;
+	@include add-border($section-border-width, $dark-color, 'top-bottom');
+}
+
+.section-primary-c{
+	@extend .section-primary;
+	@include add-border($section-border-width, $light-color, 'top-bottom');
+}
+
+.section-primary-d{
+	@extend .section-primary;
+	@include add-border($section-border-width, $secondary-color, 'bottom');
+}
+
+.section-primary-e{
+	@extend .section-primary;
+	@include add-border($section-border-width, $secondary-color, 'top');
+}
+
+/* Section - Secondary */
+
+.section-secondary{
+	@include background-color($secondary-color);
+}
+
+.section-secondary-a{
+	@extend .section-secondary;
+	@include add-border($section-border-width, $primary-color, 'top-bottom');
+}
+
+.section-secondary-b{
+	@extend .section-secondary;
+	@include add-border($section-border-width, $dark-color, 'top-bottom');
+}
+
+.section-secondary-c{
+	@extend .section-secondary;
+	@include add-border($section-border-width, $light-color, 'top-bottom');
+}
+
+.section-secondary-d{
+	@extend .section-secondary;
+	@include add-border($section-border-width, $primary-color, 'bottom');
+}
+
+.section-secondary-e{
+	@extend .section-secondary;
+	@include add-border($section-border-width, $primary-color, 'top');
+}
+
+/* Section - Dark */
+
+.section-dark{
+	@include background-color($dark-color);
+}
+
+.section-dark-a{
+	@extend .section-dark;
+	@include add-border($section-border-width, $primary-color, 'top-bottom');
+}
+
+.section-dark-b{
+	@extend .section-dark;
+	@include add-border($section-border-width, $secondary-color, 'top-bottom');
+}
+
+.section-dark-c{
+	@extend .section-dark;
+	@include add-border($section-border-width, $light-color, 'top-bottom');
+}
+
+.section-dark-d{
+	@extend .section-dark;
+	@include add-border($section-border-width, $primary-color, 'bottom');
+}
+
+.section-dark-e{
+	@extend .section-dark;
+	@include add-border($section-border-width, $primary-color, 'top');
+}
+
+/* Section - Light */
+
+.section-light{
+	@include background-color($light-color);
+}
+
+.section-light-a{
+	@extend .section-light;
+	@include add-border($section-border-width, $primary-color, 'top-bottom');
+}
+
+.section-light-b{
+	@extend .section-light;
+	@include add-border($section-border-width, $secondary-color, 'top-bottom');
+}
+
+.section-light-c{
+	@extend .section-light;
+	@include add-border($section-border-width, $dark-color, 'top-bottom');
+}
+
+.section-light-d{
+	@extend .section-light;
+	@include add-border($section-border-width, $primary-color, 'bottom');
+}
+
+.section-light-e{
+	@extend .section-light;
+	@include add-border($section-border-width, $primary-color, 'top');
+}
+
+/* Section - Showcase */
+
+.section-showcase{
+	height: $showcase-height;
+	background: url($showcase-image) center center no-repeat;
+	background-size: cover;
+}

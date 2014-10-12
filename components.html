@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Components</title>
+		
+		<!-- Stylesheets -->
+	    <link href="css/slick.css" rel="stylesheet">
+	    <link href="css/lightbox.css" rel="stylesheet">
+	    <link href="css/portfolio.css" rel="stylesheet">
+	    <link href="css/bootsassy.css" rel="stylesheet">
+  </head>
+
+	<body>
+		<header class="header-main">
+		  <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+			<div class="container">
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><h1><span class="em-primary">Boot</span>Sassy</h1></a>
+			  </div>
+
+			  <!-- Collect the nav links, forms, and other content for toggling -->
+			  <div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+				  <li><a href="index.html">Home</a></li>
+				  <li class="active dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					  <li class="dropdown-submenu"><a href="typography.html">Typography</a>
+		              	<ul class="dropdown-menu">
+		                  	<li><a href="typography.html">General</a></li>
+		                  	<li><a href="typography.html#blockquotes">Blockquotes</a></li>
+		                  	<li><a href="typography.html#dropcaps">Dropcaps</a></li>	
+		                  	<li><a href="typography.html#taglineboxes">Tagline Boxes</a></li>	         
+		              	</ul>
+          			  </li>
+          			  <li class="dropdown-submenu"><a href="blocks.html">Blocks</a>
+		              	<ul class="dropdown-menu">
+		                  	<li><a href="blocks.html">Content Blocks</a></li>
+		                  	<li><a href="blocks.html#blocktitles">Block Titles</a></li>
+		                  	<li><a href="blocks.html#iconblocks">Icon Blocks</a></li>
+		              	</ul>
+          			  </li>
+          			  <li class="dropdown-submenu"><a href="components.html">CSS Components</a>
+		              	<ul class="dropdown-menu">
+		              		<li><a href="components.html#panels">Panels</a></li>
+		              		<li><a href="components.html#wells">Wells</a></li>
+		                  	<li><a href="components.html#alerts">Alerts</a></li>
+		                  	<li><a href="components.html#progress">Progress Bars</a></li>
+		                  	<li><a href="components.html#labels">Labels</a></li>
+		                  	<li><a href="components.html#pagination">Pagination</a></li>
+		              	</ul>
+          			  </li>
+          			  <li class="dropdown-submenu"><a href="#">JavaScript Components</a>
+		              	<ul class="dropdown-menu">
+		                  	<li><a href="carousel.html">Carousel</a></li>
+		                  	<li><a href="scroller.html">Slick Scroller</a></li>
+		                  	<li><a href="gallery.html">Image Gallery</a></li>
+		                  	<li><a href="tabs.html">Tabs</a></li>
+		                  	<li><a href="accordian.html">Accordian</a></li>
+		                  	<li><a href="tooltips.html">Tooltips</a></li>
+		              	</ul>
+          			  </li>
+          			  <li class="dropdown-submenu"><a href="buttons.html">Buttons</a>
+		              	<ul class="dropdown-menu">
+		                  	<li><a href="buttons.html">General Buttons</a></li>
+							<li><a href="buttons.html#buttonsizes">Button Sizes</a></li>
+							<li><a href="buttons.html#buttongroups">Button Groups</a></li>
+							<li><a href="buttons.html#buttondropdowns">Button Dropdowns</a></li>
+		              	</ul>
+          			  </li>
+          			  <li><a href="sections.html">Sections</a></li>
+					  <li><a href="icons.html">Icons</a></li>
+					  <li><a href="tables.html">Tables</a></li>
+					  <li><a href="forms.html">Forms</a></li>
+					  <li><a href="grid.html">Grid System</a></li>             
+					</ul>
+				  </li>
+				  <li><a href="about.html">About</a></li>
+				  <li><a href="services.html">Services</a></li>
+				  <li><a href="portfolio.html">Portfolio</a></li>
+				  <li class="dropdown">
+					<a href="blog-right-sidebar.html" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					  <li><a href="blog-right-sidebar.html"> Blog - Right Sidebar</a></li>
+					  <li><a href="blog-left-sidebar.html">Blog - Left Sidebar</a></li> 
+					  <li><a href="blog-no-sidebar.html">Blog - No Sidebar</a></li>        
+					</ul>
+				  </li>
+				  <li><a href="contact.html">Contact</a></li>
+				</ul>
+			  </div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	</header>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">			
+					<ul class="accordian-list sticky">
+						<li data-toggle="collapse" data-target="#items-typography" class="collapse-heading">Typography <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-typography" class="collapse out">
+							<li><a href="typography.html">General</a></li>
+							<li><a href="typography.html#blockquotes">Blockquotes</a></li>
+							<li><a href="typography.html#dropcaps">Dropcaps</a></li>
+							<li><a href="typography.html#taglineboxes">Tagline Boxes</a></li>
+						</ul>
+						<li data-toggle="collapse" data-target="#items-blocks" class="collapse-heading">Blocks <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-blocks" class="collapse out">
+							<li><a href="blocks.html">Content Blocks</a></li>
+							<li><a href="blocks.html#blocktitles">Block Titles</a></li>
+							<li><a href="blocks.html#iconblocks">Icon Blocks</a></li>
+						</ul>
+						<li data-toggle="collapse" data-target="#items-components" class="active collapse-heading">Components <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-components" class="collapse out">
+							<li><a href="components.html#panels">Panels</a></li>
+							<li><a href="components.html#wells">Wells</a></li>
+							<li><a href="components.html#alerts">Alerts</a></li>
+							<li><a href="components.html#progress">Progress Bars</a></li>
+							<li><a href="components.html#labels">Labels</a></li>
+							<li><a href="components.html#pagination">Pagination</a></li>
+						</ul>
+						<li data-toggle="collapse" data-target="#items-javascript" class="collapse-heading">JavaScript <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-javascript" class="collapse out">
+							<li><a href="carousel.html">Carousel</a></li>
+							<li><a href="scroller.html">Slick Scroller</a></li>
+							<li><a href="gallery.html">Image Gallery</a></li>
+							<li><a href="tabs.html">Tabs</a></li>
+							<li><a href="accordian.html">Accordian</a></li>
+							<li><a href="tooltips.html">Tooltips & Popovers</a></li>
+						</ul>
+						<li data-toggle="collapse" data-target="#items-buttons" class="collapse-heading">Buttons <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-buttons" class="collapse out">
+							<li><a href="buttons.html">General Buttons</a></li>
+							<li><a href="buttons.html#buttonsizes">Button Sizes</a></li>
+							<li><a href="buttons.html#buttongroups">Button Groups</a></li>
+							<li><a href="buttons.html#buttondropdowns">Button Dropdowns</a></li>
+						</ul>
+						<li><a href="sections.html">Sections</a></li>
+						<li><a href="icons.html">Icons</a></li>
+						<li><a href="lists.html">Lists</a></li>
+						<li><a href="tables.html">Tables</a></li>
+						<li><a href="forms.html">Forms</a></li>
+						<li><a href="grid.html">Grid System</a></li>
+					</ul>
+
+				</div>
+				<div class="col-md-9">
+
+					<div class="target" id="panels"></div>	
+
+					<div class="row">
+						<h2 class="page-header">Panels</h2>
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Theme Panels</h3>
+				              	</div>
+				              	<div class="panel-body">				             
+					           		<div class="panel panel-default">
+				                  		<div class="panel-heading">
+				                   		 	<h3 class="panel-title">Default Panel</h3>
+				                  		</div>
+				                  		<div class="panel-body">
+				                    		Panel content
+				                  		</div>
+				                	</div>
+
+				                	<div class="panel panel-primary">
+				                  		<div class="panel-heading">
+				                   		 	<h3 class="panel-title">Primary Panel</h3>
+				                  		</div>
+				                  		<div class="panel-body">
+				                    		Panel content
+				                  		</div>
+				                	</div>
+
+				                	<div class="panel panel-secondary">
+				                  		<div class="panel-heading">
+				                   		 	<h3 class="panel-title">Secondary Panel</h3>
+				                  		</div>
+				                  		<div class="panel-body">
+				                    		Panel content
+				                  		</div>
+				                	</div>
+
+				                	<div class="panel panel-dark">
+				                  		<div class="panel-heading">
+				                   		 	<h3 class="panel-title">Dark Panel</h3>
+				                  		</div>
+				                  		<div class="panel-body">
+				                    		Panel content
+				                  		</div>
+				                	</div>
+
+				                	<div class="panel panel-light">
+				                  		<div class="panel-heading">
+				                   		 	<h3 class="panel-title">light Panel</h3>
+				                  		</div>
+				                  		<div class="panel-body">
+				                    		Panel content
+				                  		</div>
+				                	</div>
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="panel panel-default"&gt;
+	&lt;div class="panel-heading"&gt;
+		&lt;h3 class="panel-title"&gt;Default Panel&lt;/h3&gt;
+	&lt;/div&gt;
+	&lt;div class="panel-body"&gt;
+		Panel content
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="panel panel-primary"&gt;
+	&lt;div class="panel-heading"&gt;
+		&lt;h3 class="panel-title"&gt;Primary Panel&lt;/h3&gt;
+	&lt;/div&gt;
+	&lt;div class="panel-body"&gt;
+		Panel content
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="panel panel-secondary"&gt;
+	&lt;div class="panel-heading"&gt;
+		&lt;h3 class="panel-title"&gt;Secondary Panel&lt;/h3&gt;
+	&lt;/div&gt;
+	&lt;div class="panel-body"&gt;
+		Panel content
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="panel panel-dark"&gt;
+	&lt;div class="panel-heading"&gt;
+		&lt;h3 class="panel-title"&gt;Dark Panel&lt;/h3&gt;
+	&lt;/div&gt;
+	&lt;div class="panel-body"&gt;
+		Panel content
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="panel panel-light"&gt;
+	&lt;div class="panel-heading"&gt;
+		&lt;h3 class="panel-title"&gt;light Panel&lt;/h3&gt;
+	&lt;/div&gt;
+	&lt;div class="panel-body"&gt;
+		Panel content
+	&lt;/div&gt;
+&lt;/div&gt;			 
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row --> 
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Contextual Panels</h3>
+				              	</div>
+				              	<div class="panel-body">				             
+					           		<div class="panel panel-success">
+				                  		<div class="panel-heading">
+				                   		 	<h3 class="panel-title">Success Panel</h3>
+				                  		</div>
+				                  		<div class="panel-body">
+				                    		Panel content
+				                  		</div>
+				                	</div>
+
+				                	<div class="panel panel-info">
+				                  		<div class="panel-heading">
+				                   		 	<h3 class="panel-title">Info Panel</h3>
+				                  		</div>
+				                  		<div class="panel-body">
+				                    		Panel content
+				                  		</div>
+				                	</div>
+
+				                	<div class="panel panel-warning">
+				                  		<div class="panel-heading">
+				                   		 	<h3 class="panel-title">Warning Panel</h3>
+				                  		</div>
+				                  		<div class="panel-body">
+				                    		Panel content
+				                  		</div>
+				                	</div>
+
+				                	<div class="panel panel-danger">
+				                  		<div class="panel-heading">
+				                   		 	<h3 class="panel-title">Danger Panel</h3>
+				                  		</div>
+				                  		<div class="panel-body">
+				                    		Panel content
+				                  		</div>
+				                	</div>				                
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="panel panel-success"&gt;
+	&lt;div class="panel-heading"&gt;
+		&lt;h3 class="panel-title"&gt;Success Panel&lt;/h3&gt;
+	&lt;/div&gt;
+	&lt;div class="panel-body"&gt;
+		Panel content
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="panel panel-info"&gt;
+	&lt;div class="panel-heading"&gt;
+		&lt;h3 class="panel-title"&gt;Info Panel&lt;/h3&gt;
+	&lt;/div&gt;
+	&lt;div class="panel-body"&gt;
+		Panel content
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="panel panel-warning"&gt;
+	&lt;div class="panel-heading"&gt;
+		&lt;h3 class="panel-title"&gt;Warning Panel&lt;/h3&gt;
+	&lt;/div&gt;
+	&lt;div class="panel-body"&gt;
+		Panel content
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="panel panel-danger"&gt;
+	&lt;div class="panel-heading"&gt;
+		&lt;h3 class="panel-title"&gt;Danger Panel&lt;/h3&gt;
+	&lt;/div&gt;
+	&lt;div class="panel-body"&gt;
+		Panel content
+	&lt;/div&gt;
+&lt;/div&gt;			 
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row --> 
+
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Panel With Table</h3>
+				              	</div>
+				              	<div class="panel-body">				             
+					           		<div class="panel panel-primary">
+								      <!-- Default panel contents -->
+								      <div class="panel-heading">Panel heading</div>
+
+								      <!-- Table -->
+								      <table class="table">
+								        <thead>
+								          <tr>
+								            <th>#</th>
+								            <th>First Name</th>
+								            <th>Last Name</th>
+								            <th>Username</th>
+								          </tr>
+								        </thead>
+								        <tbody>
+								          <tr>
+								            <td>1</td>
+								            <td>Brad</td>
+								            <td>Traversy</td>
+								            <td>@traversy</td>
+								          </tr>
+								          <tr>
+								            <td>2</td>
+								            <td>Mark</td>
+								            <td>Easton</td>
+								            <td>@easton</td>
+								          </tr>
+								          <tr>
+								            <td>3</td>
+								            <td>Larry</td>
+								            <td>Smith</td>
+								            <td>@lsmith</td>
+								          </tr>
+								        </tbody>
+								      </table>
+								    </div>	                
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="panel primary"&gt;
+  &lt;!-- Default panel contents --&gt;
+  &lt;div class="panel-heading"&gt;Panel heading&lt;/div&gt;
+
+  &lt;!-- Table --&gt;
+  &lt;table class="table"&gt;
+	&lt;thead&gt;
+	  &lt;tr&gt;
+		&lt;th&gt;#&lt;/th&gt;
+		&lt;th&gt;First Name&lt;/th&gt;
+		&lt;th&gt;Last Name&lt;/th&gt;
+		&lt;th&gt;Username&lt;/th&gt;
+	  &lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	  &lt;tr&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;Brad&lt;/td&gt;
+		&lt;td&gt;Traversy&lt;/td&gt;
+		&lt;td&gt;@traversy&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr&gt;
+		&lt;td&gt;2&lt;/td&gt;
+		&lt;td&gt;Mark&lt;/td&gt;
+		&lt;td&gt;Easton&lt;/td&gt;
+		&lt;td&gt;@easton&lt;/td&gt;
+	  &lt;/tr&gt;
+	  &lt;tr&gt;
+		&lt;td&gt;3&lt;/td&gt;
+		&lt;td&gt;Larry&lt;/td&gt;
+		&lt;td&gt;Smith&lt;/td&gt;
+		&lt;td&gt;@lsmith&lt;/td&gt;
+	  &lt;/tr&gt;
+	&lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;			 
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row --> 
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Panel With List Group</h3>
+				              	</div>
+				              	<div class="panel-body">				             
+					          	    <div class="panel panel-secondary">
+										<!-- Default panel contents -->
+										<div class="panel-heading">Panel heading</div>
+							
+										<!-- List group -->
+										<ul class="list-group">
+										   	<li class="list-group-item">Cras justo odio</li>
+										    <li class="list-group-item">Dapibus ac facilisis in</li>
+										    <li class="list-group-item">Morbi leo risus</li>
+										    <li class="list-group-item">Porta ac consectetur ac</li>
+										    <li class="list-group-item">Vestibulum at eros</li>
+										</ul>
+									</div>           
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="panel panel-secondary"&gt;
+	&lt;!-- Default panel contents --&gt;
+	&lt;div class="panel-heading"&gt;Panel heading&lt;/div&gt;
+
+	&lt;!-- List group --&gt;
+	&lt;ul class="list-group"&gt;
+		&lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;
+		&lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+		&lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;
+		&lt;li class="list-group-item"&gt;Porta ac consectetur ac&lt;/li&gt;
+		&lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;  			 
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row --> 
+
+					<div class="target" id="alerts"></div>	
+
+					<div class="row">
+						<h2 class="page-header">Alerts</h2>
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Theme Alerts</h3>
+				              	</div>
+				              	<div class="panel-body">				             
+					                <div class="alert alert-primary" role="alert">This is a primary alert message</div>
+					                <div class="alert alert-secondary" role="alert">This is a secondary alert message</div>
+					                <div class="alert alert-dark" role="alert">This is a dark alert message</div>
+					                <div class="alert alert-light" role="alert">This is a light alert message</div>
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="alert alert-primary" role="alert"&gt;This is a primary alert message&lt;/div&gt;
+&lt;div class="alert alert-secondary" role="alert"&gt;This is a secondary alert message&lt;/div&gt;
+&lt;div class="alert alert-dark" role="alert"&gt;This is a dark alert message&lt;/div&gt;
+&lt;div class="alert alert-light" role="alert"&gt;This is a light alert message&lt;/div&gt;  
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->     
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Contextual Alerts</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                	<div class="alert alert-success" role="alert">This is a success alert message</div>
+					                <div class="alert alert-info" role="alert">This is an info alert message</div>
+					                <div class="alert alert-warning" role="alert">This is a warning alert message</div>
+					                <div class="alert alert-danger" role="alert">This is a danger alert message</div>
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="alert alert-success" role="alert"&gt;This is a success alert message&lt;/div&gt;
+&lt;div class="alert alert-info" role="alert"&gt;This is an info alert message&lt;/div&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;This is a warning alert message&lt;/div&gt;
+&lt;div class="alert alert-danger" role="alert"&gt;This is a danger alert message&lt;/div&gt;
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->	
+
+					<div class="target" id="progress"></div>	
+
+					<div class="row">
+						<h2 class="page-header">Progress Bars</h2>
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Standard Bar</h3>
+				              	</div>
+				              	<div class="panel-body">
+					                <div class="progress">
+					                  <div class="progress-bar progress-primary " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+					                    <span class="sr-only">40% Complete</span>
+					                  </div>
+					                </div>
+					                <div class="progress">
+					                  <div class="progress-bar progress-secondary" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+					                    <span class="sr-only">20% Complete</span>
+					                  </div>
+					                </div>
+					                <div class="progress">
+					                  <div class="progress-bar progress-dark" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					                    <span class="sr-only">60% Complete</span>
+					                  </div>
+					                </div>
+					                <div class="progress">
+					                  <div class="progress-bar progress-light" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+					                    <span class="sr-only">80% Complete</span>
+					                  </div>
+					                </div>					               				               
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"&gt;
+	&lt;span class="sr-only"&gt;40% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-secondary" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"&gt;
+	&lt;span class="sr-only"&gt;20% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-dark" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"&gt;
+	&lt;span class="sr-only"&gt;60% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-light" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"&gt;
+	&lt;span class="sr-only"&gt;80% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->	
+
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Rounded Bar</h3>
+				              	</div>
+				              	<div class="panel-body">
+					                <div class="progress-rounded">
+					                  <div class="progress-bar progress-primary " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+					                    <span class="sr-only">40% Complete</span>
+					                  </div>
+					                </div>
+					                <div class="progress-rounded">
+					                  <div class="progress-bar progress-secondary" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+					                    <span class="sr-only">20% Complete</span>
+					                  </div>
+					                </div>
+					                <div class="progress-rounded">
+					                  <div class="progress-bar progress-dark" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					                    <span class="sr-only">60% Complete</span>
+					                  </div>
+					                </div>
+					                <div class="progress-rounded">
+					                  <div class="progress-bar progress-light" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+					                    <span class="sr-only">80% Complete</span>
+					                  </div>
+					                </div>					               				               
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="progress-rounded"&gt;
+  &lt;div class="progress-bar progress-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"&gt;
+	&lt;span class="sr-only"&gt;40% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress-rounded"&gt;
+  &lt;div class="progress-bar progress-secondary" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"&gt;
+	&lt;span class="sr-only"&gt;20% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress-rounded"&gt;
+  &lt;div class="progress-bar progress-dark" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"&gt;
+	&lt;span class="sr-only"&gt;60% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress-rounded"&gt;
+  &lt;div class="progress-bar progress-light" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"&gt;
+	&lt;span class="sr-only"&gt;80% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->	
+
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Thin Bar</h3>
+				              	</div>
+				              	<div class="panel-body">
+					                <div class="progress-thin">
+					                  <div class="progress-bar progress-primary " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+					                    <span class="sr-only">40% Complete</span>
+					                  </div>
+					                </div>
+					                <div class="progress-thin">
+					                  <div class="progress-bar progress-secondary" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+					                    <span class="sr-only">20% Complete</span>
+					                  </div>
+					                </div>
+					                <div class="progress-thin">
+					                  <div class="progress-bar progress-dark" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					                    <span class="sr-only">60% Complete</span>
+					                  </div>
+					                </div>
+					                <div class="progress-thin">
+					                  <div class="progress-bar progress-light" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+					                    <span class="sr-only">80% Complete</span>
+					                  </div>
+					                </div>					               				               
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="progress-thin"&gt;
+  &lt;div class="progress-bar progress-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"&gt;
+	&lt;span class="sr-only"&gt;40% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress-thin"&gt;
+  &lt;div class="progress-bar progress-secondary" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"&gt;
+	&lt;span class="sr-only"&gt;20% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress-thin"&gt;
+  &lt;div class="progress-bar progress-dark" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"&gt;
+	&lt;span class="sr-only"&gt;60% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress-thin"&gt;
+  &lt;div class="progress-bar progress-light" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"&gt;
+	&lt;span class="sr-only"&gt;80% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Animated Bar</h3>
+				              	</div>
+				              	<div class="panel-body">				             
+					                 <div class="progress">
+									  <div class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+									    <span class="sr-only">45% Complete</span>
+									  </div>
+									</div>
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"&gt;
+	&lt;span class="sr-only"&gt;45% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;				 
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->  
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Contextual Bars</h3>
+				              	</div>
+				              	<div class="panel-body">				             
+					                <div class="progress">
+									  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+									    <span class="sr-only">40% Complete (success)</span>
+									  </div>
+									</div>
+									<div class="progress">
+									  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+									    <span class="sr-only">20% Complete</span>
+									  </div>
+									</div>
+									<div class="progress">
+									  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+									    <span class="sr-only">60% Complete (warning)</span>
+									  </div>
+									</div>
+									<div class="progress">
+									  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+									    <span class="sr-only">80% Complete</span>
+									  </div>
+									</div>
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"&gt;
+	&lt;span class="sr-only"&gt;40% Complete (success)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;
+	&lt;span class="sr-only"&gt;20% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"&gt;
+	&lt;span class="sr-only"&gt;60% Complete (warning)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"&gt;
+	&lt;span class="sr-only"&gt;80% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;				 
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row --> 
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Striped Contextual Bars</h3>
+				              	</div>
+				              	<div class="panel-body">				             
+					                 <div class="progress">
+								  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+								    <span class="sr-only">40% Complete (success)</span>
+								  </div>
+								</div>
+								<div class="progress">
+								  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+								    <span class="sr-only">20% Complete</span>
+								  </div>
+								</div>
+								<div class="progress">
+								  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+								    <span class="sr-only">60% Complete (warning)</span>
+								  </div>
+								</div>
+								<div class="progress">
+								  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+								    <span class="sr-only">80% Complete (danger)</span>
+								  </div>
+								</div>
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"&gt;
+    &lt;span class="sr-only"&gt;40% Complete (success)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;
+    &lt;span class="sr-only"&gt;20% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"&gt;
+    &lt;span class="sr-only"&gt;60% Complete (warning)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"&gt;
+    &lt;span class="sr-only"&gt;80% Complete (danger)&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;				 
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row --> 
+
+					<div class="target" id="wells"></div>	
+
+					<div class="row">
+						<h2 class="page-header">Wells</h2>
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Default Wells</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                	<div class="well">This is a well</div>
+					                <div class="well well-lg">This is a large well</div>
+					                <div class="well well-sm">This is a small well</div>
+					                <div class="well well-sharp">This well has straight corners</div>
+					                <div class="well well-no-border">This well has no border</div>
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;div class="well"&gt;
+  This is a well
+&lt;/div&gt;
+
+&lt;div class="well well-lg"&gt;
+  This is a large well
+&lt;/div&gt;
+
+&lt;div class="well well-sm"&gt;
+  This is a small well
+&lt;/div&gt;
+
+&lt;div class="well well-sharp"&gt;
+  This well has straight corners
+&lt;/div&gt;
+
+&lt;div class="well well-no-border"&gt;
+  This well has no border
+&lt;/div&gt; 
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->	
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Theme Wells</h3>
+				              	</div>
+				              	<div class="panel-body">				             
+					                <div class="well well-primary">
+					                    This is a well with an primary background
+					                  </div>
+					                  <div class="well well-secondary">
+					                    This is a well with an secondary background
+					                  </div>
+					                  <div class="well well-dark">
+					                    This is a well with an dark background
+					                  </div>
+					                  <div class="well well-light">
+					                    This is a well with an light background
+					                  </div>                 
+					                  <div class="well well-white">This well has no background</div>
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+ &lt;div class="well well-primary"&gt;
+	This is a well with an primary background
+&lt;/div&gt;
+&lt;div class="well well-secondary"&gt;
+	This is a well with an secondary background
+&lt;/div&gt;
+&lt;div class="well well-dark"&gt;
+	This is a well with an dark background
+&lt;/div&gt;
+&lt;div class="well well-light"&gt;
+	This is a well with an light background
+&lt;/div&gt;                 
+&lt;div class="well well-white"&gt;This well has no background&lt;/div&gt;
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->       
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Contextual Wells</h3>
+				              	</div>
+				              	<div class="panel-body">				         
+					                  <div class="well well-success">
+					                    This is a well with an success background
+					                  </div>
+					                  <div class="well well-info">
+					                    This is a well with an info background
+					                  </div>
+					                  <div class="well well-warning">
+					                    This is a well with an warning background
+					                  </div>
+					                  <div class="well well-danger">
+					                    This is a well with an danger background
+					                  </div>
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+ &ltdiv class="well well-success"&gt;
+	This is a well with an success background
+&lt/div&gt;
+&ltdiv class="well well-info"&gt;
+	This is a well with an info background
+&lt/div&gt;
+&ltdiv class="well well-warning"&gt;
+	This is a well with an warning background
+&lt/div&gt;
+&ltdiv class="well well-danger"&gt;
+	This is a well with an danger background
+&lt/div&gt;
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->      
+
+					<div class="target" id="labels"></div>	
+
+					 <div class="row">
+					 	<h2 class="page-header">Labels</h2>
+			             <div class="col-lg-6">         
+			              <div class="panel panel-default">
+			               <div class="panel-heading">
+			                 <h3 class="panel-title">Theme Labels</h3>
+			               </div>
+			               <div class="panel-body">
+			                  <h1>H1 Heading <span class="label label-primary"> New</span></h1>
+			                  <h2>H2 Heading <span class="label label-secondary"> New</span></h2> 
+			                  <h3>H3 Heading <span class="label label-dark"> New</span></h3> 
+			                  <h4>H4 Heading <span class="label label-light"> New</span></h4>                    
+			               </div>
+			               <div class="panel-footer">
+			 <pre>
+			&lt;h1&gt;H1 Heading &lt;span class="label label-primary"&gt; New&lt;/span&gt;&lt;/h1&gt;
+			&lt;h2&gt;H2 Heading &lt;span class="label label-secondary"&gt; New&lt;/span&gt;&lt;/h2&gt; 
+			&lt;h3&gt;H3 Heading &lt;span class="label label-dark"&gt; New&lt;/span&gt;&lt;/h3&gt; 
+			&lt;h4&gt;H4 Heading &lt;span class="label label-light"&gt; New&lt;/span&gt;&lt;/h4&gt;        
+			 </pre>   
+			                 </div>
+			               </div>
+			             </div><!-- /.col -->  
+			             <div class="col-lg-6">         
+			               <div class="panel panel-default">
+			                 <div class="panel-heading">
+			                   <h3 class="panel-title">Contextual Labels</h3>
+			                 </div>
+			                 <div class="panel-body">               
+			                    <h1>H1 Heading <span class="label label-success"> New</span></h1>
+			                    <h2>H2 Heading <span class="label label-info"> New</span></h2>
+			                    <h3>H3 Heading <span class="label label-warning"> New</span></h3>
+			                    <h4>H4 Heading <span class="label label-danger"> New</span></h4>
+			                 </div>
+			                 <div class="panel-footer">
+			 <pre>
+			&lt;h1&gt;H1 Heading &lt;span class="label label-success"&gt; New&lt;/span&gt;&lt;/h1&gt;
+			&lt;h2&gt;H2 Heading &lt;span class="label label-info"&gt; New&lt;/span&gt;&lt;/h2&gt; 
+			&lt;h3&gt;H3 Heading &lt;span class="label label-warning"&gt; New&lt;/span&gt;&lt;/h3&gt; 
+			&lt;h4&gt;H4 Heading &lt;span class="label label-danger"&gt; New&lt;/span&gt;&lt;/h4&gt;   
+			 </pre>   
+			                 </div>
+			               </div>
+			             </div> <!-- /.col -->  
+			           </div><!-- /.row --> 
+
+					<div class="target" id="pagination"></div>	
+
+					<div class="row">
+						<h2 class="page-header">Pagination</h2>
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">General Pagination</h3>
+				              	</div>
+				              	<div class="panel-body">				         
+					                  <ul class="pagination">
+										<li><a href="#">&laquo;</a></li>
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li><a href="#">&raquo;</a></li>
+									</ul>
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&ltul class="pagination"&gt;
+  &ltli&gt;&lta href="#"&gt;&laquo;&lt/a&gt;&lt/li&gt;
+  &ltli&gt;&lta href="#"&gt;1&lt/a&gt;&lt/li&gt;
+  &ltli&gt;&lta href="#"&gt;2&lt/a&gt;&lt/li&gt;
+  &ltli&gt;&lta href="#"&gt;3&lt/a&gt;&lt/li&gt;
+  &ltli&gt;&lta href="#"&gt;4&lt/a&gt;&lt/li&gt;
+  &ltli&gt;&lta href="#"&gt;5&lt/a&gt;&lt/li&gt;
+  &ltli&gt;&lta href="#"&gt;&raquo;&lt/a&gt;&lt/li&gt;
+&lt/ul&gt;
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->  
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Disabled and active states</h3>
+				              	</div>
+				              	<div class="panel-body">				         
+					                  <ul class="pagination">
+									      <li class="disabled"><a href="#">«</a></li>
+									      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+									      <li><a href="#">2</a></li>
+									      <li><a href="#">3</a></li>
+									      <li><a href="#">4</a></li>
+									      <li><a href="#">5</a></li>
+									      <li><a href="#">»</a></li>
+									   </ul>
+									</ul>
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;ul class="pagination"&gt;
+  &lt;li class="disabled"&gt;&lt;a href="#"&gt;&laquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;1 &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  ...
+&lt;/ul&gt;
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->  
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Pagination Sizes</h3>
+				              	</div>
+				              	<div class="panel-body">				         
+					                  <div class="bs-example">
+									    <div>
+									      <ul class="pagination pagination-lg">
+									        <li><a href="#">«</a></li>
+									        <li><a href="#">1</a></li>
+									        <li><a href="#">2</a></li>
+									        <li><a href="#">3</a></li>
+									        <li><a href="#">4</a></li>
+									        <li><a href="#">5</a></li>
+									        <li><a href="#">»</a></li>
+									      </ul>
+									    </div>
+									    <div>
+									      <ul class="pagination">
+									        <li><a href="#">«</a></li>
+									        <li><a href="#">1</a></li>
+									        <li><a href="#">2</a></li>
+									        <li><a href="#">3</a></li>
+									        <li><a href="#">4</a></li>
+									        <li><a href="#">5</a></li>
+									        <li><a href="#">»</a></li>
+									      </ul>
+									    </div>
+									    <div>
+									      <ul class="pagination pagination-sm">
+									        <li><a href="#">«</a></li>
+									        <li><a href="#">1</a></li>
+									        <li><a href="#">2</a></li>
+									        <li><a href="#">3</a></li>
+									        <li><a href="#">4</a></li>
+									        <li><a href="#">5</a></li>
+									        <li><a href="#">»</a></li>
+									      </ul>
+									    </div>
+									  </div>
+									</ul>
+						        </div>
+				              	<div class="panel-footer">
+<pre>
+&lt;ul class="pagination pagination-lg"&gt;...&lt;/ul&gt;
+&lt;ul class="pagination"&gt;...&lt;/ul&gt;
+&lt;ul class="pagination pagination-sm"&gt;...&lt;/ul&gt;
+</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->  
+
+				</div><!-- /. col-9 -->
+			</div><!-- /. row -->	
+		</div><!-- /. container -->
+	</section>
+	
+	<footer class="footer-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h3>Who We Are</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin est turpis, commodo sit amet nunc non, mattis condimentum felis. Aliquam lacinia tempus felis at commodo.
+						</p>
+						<h5>Follow Us:</h5>
+						<i class="fa fa-2 fa-facebook"></i>&nbsp;&nbsp; <i class="fa fa-2 fa-twitter"></i>&nbsp;&nbsp; <i class="fa fa-2 fa-linkedin"></i>&nbsp;&nbsp; <i class="fa fa-2 fa-google-plus-square"></i>&nbsp;&nbsp; <i class="fa fa-2 fa-youtube"></i>
+				</div>
+				<div class="col-md-3">
+					<h3>Recent Posts</h3>
+					<ul class="blogroll">
+						<li>
+							Curabitur a mi imperdiet
+							<div><i class="fa fa-clock-o"></i> September 13, 2014</div>
+						</li>
+						<li>
+							Curabitur a mi imperdiet
+							<div><i class="fa fa-clock-o"></i> September 13, 2014</div>
+						</li>
+						<li>
+							Curabitur a mi imperdiet
+							<div><i class="fa fa-clock-o"></i> September 13, 2014</div>
+						</li>
+
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>Get In Touch</h3>
+					<p>Aliquam lacinia tempus felis at commodo</p>
+					<ul>
+						<li><i class="fa fa-home"></i> 555 Mass Ave st, Suite 7</li>
+						<li><i class="fa fa-globe"></i> Boston MA 02115</li>
+						<li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> support@codeskillet.com</li>
+						<li><i class="fa fa-phone"></i> <strong>Phone:</strong> (555) 555-5555</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>Newsletter</h3>
+					<p>Sign up for our newsletter</p>
+					<form class="form-input-1 input-group">
+						<input type="email" class="form-control" placeholder="Enter Email Address...">
+						<span class="input-group-btn">
+							<button class="btn btn-primary">SUBMIT</button>
+						</span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/template.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>  
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+  </body>
+</html>

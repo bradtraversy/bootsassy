@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Lists</title>
+		
+		<!-- Stylesheets -->
+	    <link href="css/slick.css" rel="stylesheet">
+	    <link href="css/lightbox.css" rel="stylesheet">
+	    <link href="css/portfolio.css" rel="stylesheet">
+	    <link href="css/bootsassy.css" rel="stylesheet">
+  </head>
+
+	<body>
+		<header class="header-main">
+		  <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+			<div class="container">
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><h1><span class="em-primary">Boot</span>Sassy</h1></a>
+			  </div>
+
+			  <!-- Collect the nav links, forms, and other content for toggling -->
+			  <div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+				  <li><a href="index.html">Home</a></li>
+				  <li class="active dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					  <li class="dropdown-submenu"><a href="typography.html">Typography</a>
+		              	<ul class="dropdown-menu">
+		                  	<li><a href="typography.html">General</a></li>
+		                  	<li><a href="typography.html#blockquotes">Blockquotes</a></li>
+		                  	<li><a href="typography.html#dropcaps">Dropcaps</a></li>	
+		                  	<li><a href="typography.html#taglineboxes">Tagline Boxes</a></li>	         
+		              	</ul>
+          			  </li>
+          			  <li class="dropdown-submenu"><a href="blocks.html">Blocks</a>
+		              	<ul class="dropdown-menu">
+		                  	<li><a href="blocks.html">Content Blocks</a></li>
+		                  	<li><a href="blocks.html#blocktitles">Block Titles</a></li>
+		                  	<li><a href="blocks.html#iconblocks">Icon Blocks</a></li>
+		              	</ul>
+          			  </li>
+          			  <li class="dropdown-submenu"><a href="components.html">CSS Components</a>
+		              	<ul class="dropdown-menu">
+		              		<li><a href="components.html#panels">Panels</a></li>
+		              		<li><a href="components.html#wells">Wells</a></li>
+		                  	<li><a href="components.html#alerts">Alerts</a></li>
+		                  	<li><a href="components.html#progress">Progress Bars</a></li>
+		                  	<li><a href="components.html#labels">Labels</a></li>
+		                  	<li><a href="components.html#pagination">Pagination</a></li>
+		              	</ul>
+          			  </li>
+          			  <li class="dropdown-submenu"><a href="#">JavaScript Components</a>
+		              	<ul class="dropdown-menu">
+		                  	<li><a href="carousel.html">Carousel</a></li>
+		                  	<li><a href="scroller.html">Slick Scroller</a></li>
+		                  	<li><a href="gallery.html">Image Gallery</a></li>
+		                  	<li><a href="tabs.html">Tabs</a></li>
+		                  	<li><a href="accordian.html">Accordian</a></li>
+		                  	<li><a href="tooltips.html">Tooltips</a></li>
+		              	</ul>
+          			  </li>
+          			  <li class="dropdown-submenu"><a href="buttons.html">Buttons</a>
+		              	<ul class="dropdown-menu">
+		                  	<li><a href="buttons.html">General Buttons</a></li>
+							<li><a href="buttons.html#buttonsizes">Button Sizes</a></li>
+							<li><a href="buttons.html#buttongroups">Button Groups</a></li>
+							<li><a href="buttons.html#buttondropdowns">Button Dropdowns</a></li>
+		              	</ul>
+          			  </li>
+          			  <li><a href="sections.html">Sections</a></li>
+					  <li><a href="icons.html">Icons</a></li>
+					  <li><a href="tables.html">Tables</a></li>
+					  <li><a href="forms.html">Forms</a></li>
+					  <li><a href="grid.html">Grid System</a></li>             
+					</ul>
+				  </li>
+				  <li><a href="about.html">About</a></li>
+				  <li><a href="services.html">Services</a></li>
+				  <li><a href="portfolio.html">Portfolio</a></li>
+				  <li class="dropdown">
+					<a href="blog-right-sidebar.html" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					  <li><a href="blog-right-sidebar.html"> Blog - Right Sidebar</a></li>
+					  <li><a href="blog-left-sidebar.html">Blog - Left Sidebar</a></li> 
+					  <li><a href="blog-no-sidebar.html">Blog - No Sidebar</a></li>        
+					</ul>
+				  </li>
+				  <li><a href="contact.html">Contact</a></li>
+				</ul>
+			  </div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">			
+					<ul class="accordian-list sticky">
+						<li data-toggle="collapse" data-target="#items-typography" class="collapse-heading">Typography <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-typography" class="collapse out">
+							<li><a href="typography.html">General</a></li>
+							<li><a href="typography.html#blockquotes">Blockquotes</a></li>
+							<li><a href="typography.html#dropcaps">Dropcaps</a></li>
+							<li><a href="typography.html#taglineboxes">Tagline Boxes</a></li>
+						</ul>
+						<li data-toggle="collapse" data-target="#items-blocks" class="collapse-heading">Blocks <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-blocks" class="collapse out">
+							<li><a href="blocks.html">Content Blocks</a></li>
+							<li><a href="blocks.html#blocktitles">Block Titles</a></li>
+							<li><a href="blocks.html#iconblocks">Icon Blocks</a></li>
+						</ul>
+						<li data-toggle="collapse" data-target="#items-components" class="collapse-heading">Components <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-components" class="collapse out">
+							<li><a href="components.html#panels">Panels</a></li>
+							<li><a href="components.html#wells">Wells</a></li>
+							<li><a href="components.html#alerts">Alerts</a></li>
+							<li><a href="components.html#progress">Progress Bars</a></li>
+							<li><a href="components.html#labels">Labels</a></li>
+							<li><a href="components.html#pagination">Pagination</a></li>
+						</ul>
+						<li data-toggle="collapse" data-target="#items-javascript" class="collapse-heading">JavaScript <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-javascript" class="collapse out">
+							<li><a href="carousel.html">Carousel</a></li>
+							<li><a href="scroller.html">Slick Scroller</a></li>
+							<li><a href="gallery.html">Image Gallery</a></li>
+							<li><a href="tabs.html">Tabs</a></li>
+							<li><a href="accordian.html">Accordian</a></li>
+							<li><a href="tooltips.html">Tooltips & Popovers</a></li>
+						</ul>
+						<li data-toggle="collapse" data-target="#items-buttons" class="collapse-heading">Buttons <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-buttons" class="collapse out">
+							<li><a href="buttons.html">General Buttons</a></li>
+							<li><a href="buttons.html#buttonsizes">Button Sizes</a></li>
+							<li><a href="buttons.html#buttongroups">Button Groups</a></li>
+							<li><a href="buttons.html#buttondropdowns">Button Dropdowns</a></li>
+						</ul>
+						<li><a href="sections.html">Sections</a></li>
+						<li><a href="icons.html">Icons</a></li>
+						<li class="active"><a href="lists.html">Lists</a></li>
+						<li><a href="tables.html">Tables</a></li>
+						<li><a href="forms.html">Forms</a></li>
+						<li><a href="grid.html">Grid System</a></li>
+					</ul>
+
+				</div>
+				<div class="col-md-9">
+					<div class="row">
+		           	 	<div class="col-lg-12">
+		 					<div class="alert alert-info">Use the class <strong>.list-unstyled</strong> to remove bullets and initial margin and padding from the list and it's items</div>
+		            	</div><!-- /.col -->        
+		          	</div><!-- /.row -->  
+
+			<div class="row">
+            <div class="col-lg-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">General Unordered Lists</h3>
+                </div>
+              <div class="panel-body">
+                <ul>
+                  <li>List Item 1</li>
+                  <li>List Item 2</li>
+                  <li>List Item 3</li>
+                  <li>List Item 4</li>
+                  <li>List Item 5
+                    <ul>
+                      <li>List Sub Item 1</li>
+                      <li>List Sub Item 2</li>
+                      <li>List Sub Item 3</li>
+                      <li>List Sub Item 4</li>
+                    </ul>
+                  </li>
+                  <li>List Item 6</li>
+                  <li>List Item 7 </li>
+                  <li>List Item 8</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+<pre>
+&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>   
+                </div>
+              </div><!-- /.panel end -->  
+            </div><!-- /.col --> 
+            <div class="col-lg-6">         
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">General Ordered Lists</h3>
+                </div>
+              <div class="panel-body">
+                <ol>
+                  <li>List Item 1</li>
+                  <li>List Item 2</li>
+                  <li>List Item 3</li>
+                  <li>List Item 4</li>
+                  <li>List Item 5
+                    <ol>
+                      <li>List Sub Item 1</li>
+                      <li>List Sub Item 2</li>
+                      <li>List Sub Item 3</li>
+                      <li>List Sub Item 4</li>
+                    </ol>
+                  </li>
+                  <li>List Item 6</li>
+                  <li>List Item 7 </li>
+                  <li>List Item 8</li>
+                </ol>
+              </div>
+              <div class="panel-footer">
+<pre>
+&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;    
+</pre>   
+                </div>
+              </div><!-- /.panel end -->
+            </div>
+             
+          </div><!-- /.row -->	
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Bottom Border Lists</h3>
+                </div>
+              <div class="panel-body">
+                <ul class="list-border-bottom">
+                  <li>List Item 1</li>
+                  <li>List Item 2</li>
+                  <li>List Item 3</li>
+                  <li>List Item 4</li>
+                  <li>List Item 5</li>
+                  <li>List Item 6</li>  
+                  <li>List Item 7</li>               
+                </ul>
+              </div>
+              <div class="panel-footer">
+<pre>
+&lt;ul class="list-border-bottom"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;       
+
+</pre>   
+                </div>
+              </div><!-- /.panel end -->  
+            </div><!-- /.col --> 
+            <div class="col-lg-6">         
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Background List</h3>
+                </div>
+              <div class="panel-body">
+              	<ul class="list-background-primary">
+                    <li>list-background-primary</li>
+                  	<li>list-background-primary</li>
+                </ul>
+                <br>
+                <ul class="list-background-secondary">
+                    <li>list-background-secondary</li>
+                  	<li>list-background-secondary</li>  
+                </ul>
+                <br>
+                <ul class="list-background-light">
+                    <li>list-background-light</li>
+                  	<li>list-background-light</li>  
+                </ul>
+              </div>
+              <div class="panel-footer">
+<pre>
+&lt;ul class="list-background-primary"&gt;
+	&lt;li&gt;...&lt;/li&gt;
+	&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="list-background-secondary"&gt;
+	&lt;li&gt;...&lt;/li&gt;
+	&lt;li&gt;...&lt;/li&gt;  
+&lt;/ul&gt;
+
+&lt;ul class="list-background-light"&gt;
+	&lt;li&gt;...&lt;/li&gt;
+	&lt;li&gt;...&lt;/li&gt;  
+&lt;/ul&gt;       
+</pre>   
+                </div>
+              </div><!-- /.panel end -->
+            </div>
+             
+          </div><!-- /.row -->   
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Number List</h3>
+                </div>
+              <div class="panel-body">
+                <ol class="list-numbers-primary">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis sapien at nulla porttitor blandit. </li>
+                    <li>Quisque erat arcu, tristique id sollicitudin venenatis, fringilla id turpis. Nam id nulla massa uisque vulputate.</li>
+                    <li>Nunc lectus sapien, cursus ac bibendum vitae, lacinia. Aliquam feugiat risus at urna laoreet in facilisis.</li>
+                   
+                </ol>
+              </div>
+              <div class="panel-footer">
+<pre>
+&lt;ol class="list-numbers-primary"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;  
+
+&lt;ol class="list-numbers-secondary"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol class="list-numbers-dark"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol class="list-numbers-light"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;     
+</pre> 
+                </div>
+              </div><!-- /.panel end -->  
+            </div><!-- /.col --> 
+            <div class="col-lg-6">         
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">FIlled Number List</h3>
+                </div>
+              <div class="panel-body">
+                <ol class="list-numbers-primary-fill">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis sapien at nulla porttitor blandit. </li>
+                    <li>Quisque erat arcu, tristique id sollicitudin venenatis, fringilla id turpis. Nam id nulla massa uisque vulputate.</li>
+                    <li>Nunc lectus sapien, cursus ac bibendum vitae, lacinia. Aliquam feugiat risus at urna laoreet in facilisis.</li>
+                   
+                </ol>
+              </div>
+              <div class="panel-footer">
+<pre>
+&lt;ol class="list-numbers-primary-fill"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;       
+
+&lt;ol class="list-numbers-secondary-fill"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;  
+
+&lt;ol class="list-numbers-dark-fill"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;  
+
+&lt;ol class="list-numbers-light-fill"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;  
+</pre>   
+                </div>
+              </div><!-- /.panel end -->
+            </div>
+             
+          </div><!-- /.row -->      
+
+          <div class="row">
+     
+            <div class="col-lg-12">         
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Accordian List</h3>
+                </div>
+              <div class="panel-body">
+               	<ul class="accordian-list">
+					<li data-toggle="collapse" data-target="#items-one" class="collapse-heading">Item One <i class="fa fa-angle-down fa-1"></i></li>
+					<ul id="items-one" class="collapse out">
+						<li><a href="#">Sub Item One</a></li>
+						<li><a href="#">Sub Item Two/a></li>
+						<li><a href="#">Sub Item Three</a></li>
+					</ul>
+					<li data-toggle="collapse" data-target="#items-two" class="collapse-heading">Item Two <i class="fa fa-angle-down fa-1"></i></li>
+					<ul id="items-two" class="collapse out">
+						<li><a href="#">Sub Item One</a></li>
+						<li><a href="#">Sub Item Two/a></li>
+						<li><a href="#">Sub Item Three</a></li>
+					</ul>
+					<li data-toggle="collapse" data-target="#items-three" class="collapse-heading">Item Three <i class="fa fa-angle-down fa-1"></i></li>
+					<ul id="items-three" class="collapse out">
+						<li><a href="#">Sub Item One</a></li>
+						<li><a href="#">Sub Item Two/a></li>
+						<li><a href="#">Sub Item Three</a></li>
+					</ul>
+					<li data-toggle="collapse" data-target="#items-four" class="collapse-heading">Item Four<i class="fa fa-angle-down fa-1"></i></li>
+					<ul id="items-four" class="collapse out">
+						<li><a href="#">Sub Item One</a></li>
+						<li><a href="#">Sub Item Two/a></li>
+						<li><a href="#">Sub Item Three</a></li>
+					</ul>
+					<li><a href="#">Item Five</a></li>
+					<li><a href="#">Item Six</a></li>
+					<li><a href="#">Seven</a></li>
+				</ul>
+              </div>
+              <div class="panel-footer">
+<pre>
+&lt;ul class="accordian-list"&gt;
+	&lt;li data-toggle="collapse" data-target="#items-one" class="collapse-heading"&gt;Item One &lt;i class="fa fa-angle-down fa-1"&gt;&lt;/i&gt;&lt;/li&gt;
+	&lt;ul id="items-one" class="collapse out"&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Sub Item One&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Sub Item Two/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Sub Item Three&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;li data-toggle="collapse" data-target="#items-two" class="collapse-heading"&gt;Item Two &lt;i class="fa fa-angle-down fa-1"&gt;&lt;/i&gt;&lt;/li&gt;
+	&lt;ul id="items-two" class="collapse out"&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Sub Item One&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Sub Item Two/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Sub Item Three&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;li data-toggle="collapse" data-target="#items-three" class="collapse-heading"&gt;Item Three &lt;i class="fa fa-angle-down fa-1"&gt;&lt;/i&gt;&lt;/li&gt;
+	&lt;ul id="items-three" class="collapse out"&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Sub Item One&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Sub Item Two/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Sub Item Three&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;li data-toggle="collapse" data-target="#items-four" class="collapse-heading"&gt;Item Four&lt;i class="fa fa-angle-down fa-1"&gt;&lt;/i&gt;&lt;/li&gt;
+	&lt;ul id="items-four" class="collapse out"&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Sub Item One&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Sub Item Two/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Sub Item Three&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Item Five&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Item Six&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Seven&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>   
+                </div>
+              </div><!-- /.panel end -->
+            </div>
+             
+          </div><!-- /.row -->  
+
+          <h2 class="page-header">List Groups</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">List Group</h3>
+              </div>
+              <div class="panel-body">
+                <ul class="list-group">
+				  <li class="list-group-item">Cras justo odio</li>
+				  <li class="list-group-item">Dapibus ac facilisis in</li>
+				  <li class="list-group-item">Morbi leo risus</li>
+				  <li class="list-group-item">Porta ac consectetur ac</li>
+				  <li class="list-group-item">Vestibulum at eros</li>
+				</ul>
+              </div>
+              <div class="panel-footer">
+<pre>
+&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+
+
+</pre>   
+                </div>
+              </div> 
+            </div><!-- /.col --> 
+            <div class="col-lg-6">         
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Linked Items</h3>
+                </div>
+              <div class="panel-body">
+                <div class="list-group">
+				  <a href="#" class="list-group-item active">
+				    Cras justo odio
+				  </a>
+				  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+				  <a href="#" class="list-group-item">Morbi leo risus</a>
+				  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+				  <a href="#" class="list-group-item">Vestibulum at eros</a>
+				</div>
+              </div>
+              <div class="panel-footer">
+<pre>
+&lt;div class="list-group"&gt;
+  &lt;a href="#" class="list-group-item active"&gt;
+	...
+  &lt;/a&gt;
+  &lt;a href="#" class="list-group-item"&gt;...&lt;/a&gt;
+  &lt;a href="#" class="list-group-item"&gt;...&lt;/a&gt;
+  &lt;a href="#" class="list-group-item"&gt;...&lt;/a&gt;
+  &lt;a href="#" class="list-group-item"&gt;...&lt;/a&gt;
+&lt;/div&gt;    
+</pre>   
+                </div>
+              </div><!-- /.panel end -->
+            </div>
+             
+          </div><!-- /.row --> 
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Theme List Groups</h3>
+              </div>
+              <div class="panel-body">
+                <ul class="list-group">
+				  <li class="list-group-item list-group-item-primary">Dapibus ac facilisis in</li>
+				  <li class="list-group-item list-group-item-secondary">Cras sit amet nibh libero</li>
+				  <li class="list-group-item list-group-item-dark">Porta ac consectetur ac</li>
+				  <li class="list-group-item list-group-item-light">Vestibulum at eros</li>
+				</ul>
+				<div class="list-group">
+				  <a href="#" class="list-group-item list-group-item-primary">Dapibus ac facilisis in</a>
+				  <a href="#" class="list-group-item list-group-item-secondary">Cras sit amet nibh libero</a>
+				  <a href="#" class="list-group-item list-group-item-dark">Porta ac consectetur ac</a>
+				  <a href="#" class="list-group-item list-group-item-light">Vestibulum at eros</a>
+				</div>
+              </div>
+              <div class="panel-footer">
+<pre>
+&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item list-group-item-primary"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-secondary"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-dark"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-light"&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="list-group"&gt;
+  &lt;a href="#" class="list-group-item list-group-item-primary"&gt;...&lt;/a&gt;
+  &lt;a href="#" class="list-group-item list-group-item-secondary"&gt;...&lt;/a&gt;
+  &lt;a href="#" class="list-group-item list-group-item-dark"&gt;..&lt;/a&gt;
+  &lt;a href="#" class="list-group-item list-group-item-light"&gt;...&lt;/a&gt;
+&lt;/div&gt;
+</pre>   
+                </div>
+              </div> 
+            </div><!-- /.col --> 
+            <div class="col-lg-6">         
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Contextual List Groups</h3>
+                </div>
+              <div class="panel-body">
+				<ul class="list-group">
+				  <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+				  <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+				  <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+				  <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+				</ul>
+				<div class="list-group">
+				  <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+				  <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+				  <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+				  <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+				</div>
+              </div>
+              <div class="panel-footer">
+<pre>
+&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item list-group-item-success"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-info"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-warning"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-danger"&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="list-group"&gt;
+  &lt;a href="#" class="list-group-item list-group-item-success"&gt;...&lt;/a&gt;
+  &lt;a href="#" class="list-group-item list-group-item-info"&gt;...&lt;/a&gt;
+  &lt;a href="#" class="list-group-item list-group-item-warning"&gt;...&lt;/a&gt;
+  &lt;a href="#" class="list-group-item list-group-item-danger"&gt;...&lt;/a&gt;
+&lt;/div&gt;    
+</pre>   
+                </div>
+              </div><!-- /.panel end -->
+            </div>
+             
+          </div><!-- /.row --> 
+
+          		<div class="row">
+		            <div class="col-lg-12">
+		              <div class="panel panel-default">
+		              <div class="panel-heading">
+		                <h3 class="panel-title">Badges</h3>
+		              </div>
+		              <div class="panel-body">
+		                <ul class="list-group">
+						  <li class="list-group-item">
+						    <span class="badge">14</span>
+						    Cras justo odio
+						  </li>
+						  <li class="list-group-item">
+						    <span class="badge badge-primary">4</span>
+						     Morbi leo risus
+						  </li>
+						  <li class="list-group-item">
+						    <span class="badge badge-secondary">27</span>
+						    Cras justo odio
+						  </li>
+						  <li class="list-group-item">
+						    <span class="badge badge-dark">12</span>
+						    Vestibulum at eros
+						  </li>
+						  <li class="list-group-item">
+						    <span class="badge badge=light">23</span>
+						    Dapibus ac facilisis
+						  </li>
+						</ul>
+		              </div>
+		              <div class="panel-footer">
+<pre>
+&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item"&gt;
+	&lt;span class="badge"&gt;
+		14
+	&lt;/span&gt;
+	...
+  &lt;/li&gt;
+  &lt;li class="list-group-item"&gt;
+	&lt;span class="badge badge-primary"&gt;
+		4
+	&lt;/span&gt;
+	 ...
+  &lt;/li&gt;
+  &lt;li class="list-group-item"&gt;
+	&lt;span class="badge badge-secondary"&gt;
+		27
+	&lt;/span&gt;
+	...
+  &lt;/li&gt;
+  &lt;li class="list-group-item"&gt;
+	&lt;span class="badge badge-dark"&gt;
+		12
+	&lt;/span&gt;
+	...
+  &lt;/li&gt;
+  &lt;li class="list-group-item"&gt;
+	&lt;span class="badge badge=light"&gt;
+		23
+	&lt;/span&gt;
+	...
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>   
+		                </div>
+		              </div> 
+		            </div><!-- /.col --> 
+		    
+		             
+		          </div><!-- /.row --> 
+						</div><!-- /. col-9 -->
+					</div><!-- /. row -->	
+				</div><!-- /. container -->
+			</section>
+	
+	<footer class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Who We Are</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin est turpis, commodo sit amet nunc non, mattis condimentum felis. Aliquam lacinia tempus felis at commodo.
+            </p>
+            <h5>Follow Us:</h5>
+            <i class="fa fa-2 fa-facebook"></i>&nbsp;&nbsp; <i class="fa fa-2 fa-twitter"></i>&nbsp;&nbsp; <i class="fa fa-2 fa-linkedin"></i>&nbsp;&nbsp; <i class="fa fa-2 fa-google-plus-square"></i>&nbsp;&nbsp; <i class="fa fa-2 fa-youtube"></i>
+        </div>
+        <div class="col-md-3">
+          <h3>Recent Posts</h3>
+          <ul class="blogroll">
+            <li>
+              Curabitur a mi imperdiet
+              <div><i class="fa fa-clock-o"></i> September 13, 2014</div>
+            </li>
+            <li>
+              Curabitur a mi imperdiet
+              <div><i class="fa fa-clock-o"></i> September 13, 2014</div>
+            </li>
+            <li>
+              Curabitur a mi imperdiet
+              <div><i class="fa fa-clock-o"></i> September 13, 2014</div>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Get In Touch</h3>
+          <p>Aliquam lacinia tempus felis at commodo</p>
+          <ul>
+            <li><i class="fa fa-home"></i> 555 Mass Ave st, Suite 7</li>
+            <li><i class="fa fa-globe"></i> Boston MA 02115</li>
+            <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> support@codeskillet.com</li>
+            <li><i class="fa fa-phone"></i> <strong>Phone:</strong> (555) 555-5555</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Newsletter</h3>
+          <p>Sign up for our newsletter</p>
+          <form class="form-input-1 input-group">
+            <input type="email" class="form-control" placeholder="Enter Email Address...">
+            <span class="input-group-btn">
+              <button class="btn btn-primary">SUBMIT</button>
+            </span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+	
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/template.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>  
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+  </body>
+</html>

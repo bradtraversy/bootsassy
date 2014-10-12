@@ -1,0 +1,117 @@
+/* Accordian Lists */
+
+.accordian-default{
+	padding:0;
+	margin:0;
+	border-bottom:1px #ccc solid !important;
+}
+
+.accordian-default li{
+	list-style:none;
+	line-height:2em;
+	font-size:100%;
+	color:#666;
+}
+
+.accordian-default .collapse-heading{
+	padding:2px 0 2px 15px;
+	background-color:#f4f4f4;
+	border-top:1px #ccc solid;
+	border-right:1px #ccc solid;
+	border-left:1px #ccc solid;
+}
+
+.accordian-default .collapse-heading i{
+	float:right;
+	margin-right:10px;
+	margin-top:7px;
+}
+
+.accordian-default .collapse{
+	border-top:1px #ccc solid !important;
+}
+
+.accordian-default .collapse,.accordian-default .collapsing{
+	padding:10px;
+}
+
+.accordian-default > li:last-child{
+	border-bottom:0;
+}
+
+.accordian-default li a{
+	display:block;
+	color:#666;
+	padding:2px 0 2px 15px;
+}
+
+.accordian-default li:hover,.accordian-default a:hover,.accordian-default li:hover a{
+	@include background-color($primary-color);
+}
+
+.accordian-default ul{
+	padding-left:0;
+}
+
+
+/* Accordian Primary */
+
+.accordian-primary{
+	@extend .accordian-default;
+	border-color:darken($primary-color,10%) !important;
+}
+
+.accordian-primary .collapse{
+	border-color:darken($primary-color,10%) !important;
+}
+
+.accordian-primary .collapse-heading{
+	@include background-color($primary-color);
+	border-color:darken($primary-color,10%) !important;
+}
+
+.accordian-primary .collapse-heading:hover{
+	@include background-color(lighten($primary-color,10%));
+}
+
+
+/* Accordian Secondary */
+
+.accordian-secondary{
+	@extend .accordian-default;
+	border-color:darken($secondary-color,10%) !important;
+}
+
+.accordian-secondary .collapse{
+	border-color:darken($primary-color,10%) !important;
+}
+
+.accordian-secondary .collapse-heading{
+	@include background-color($secondary-color);
+	border-color:darken($secondary-color,10%) !important;
+}
+
+.accordian-secondary .collapse-heading:hover{
+	@include background-color(lighten($secondary-color,10%));
+}
+
+
+/* Accordian Dark */
+
+.accordian-dark{
+	@extend .accordian-default;
+	border-color:darken($dark-color,10%) !important;
+}
+
+.accordian-dark .collapse{
+	border-color:darken($dark-color,10%) !important;
+}
+
+.accordian-dark .collapse-heading{
+	@include background-color($dark-color);
+	border-color:darken($dark-color,10%) !important;
+}
+
+.accordian-dark .collapse-heading:hover{
+	@include background-color(lighten($dark-color,10%));
+}

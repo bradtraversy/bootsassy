@@ -1,0 +1,48 @@
+
+/* Form Input 1 */
+.form-input-1 .btn, 
+.form-input-1 .btn, 
+.form-input-1 .form-control,
+.form-input-1-border .btn, 
+.form-input-1-border .btn, 
+.form-input-1-border .form-control {
+	border: 0;
+	height: 38px;
+	margin-top: 0;
+}
+
+.form-input-1-border input[type='text'],.form-input-1-border input[type='email'],.form-input-1-border input[type='search']{
+	border-top:1px #ccc solid;
+	border-bottom:1px #ccc solid;
+	border-left:1px #ccc solid;
+}
+
+.form-input-1-border .btn{
+	border-top:1px #ccc solid;
+	border-bottom:1px #ccc solid;
+	border-right:1px #ccc solid;
+}
+
+/* Searchbox */
+
+.search{
+	width:100%;
+}
+
+.search input[type='search']{
+	border:0;
+	height:50px;
+	width:80%;
+	border:2px solid #00aff0;
+	font-size:18px;
+	padding-left:10px;
+	padding-bottom:5px;
+}
+
+.search button{
+	border:0;
+	background:none;
+	padding:0;
+	vertical-align:top;
+	margin-left:-4px;
+}

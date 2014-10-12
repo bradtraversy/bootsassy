@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Blocks</title>
+		
+		<!-- Stylesheets -->
+	    <link href="css/slick.css" rel="stylesheet">
+	    <link href="css/lightbox.css" rel="stylesheet">
+	    <link href="css/portfolio.css" rel="stylesheet">
+	    <link href="css/bootsassy.css" rel="stylesheet">
+  </head>
+
+	<body>
+		<header class="header-main">
+		  <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+			<div class="container">
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><h1><span class="em-primary">Boot</span>Sassy</h1></a>
+			  </div>
+
+			  <!-- Collect the nav links, forms, and other content for toggling -->
+			  <div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+				  <li><a href="index.html">Home</a></li>
+				  <li class="dropdown active">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					  <li class="dropdown-submenu"><a href="typography.html">Typography</a>
+		              	<ul class="dropdown-menu">
+		                  	<li><a href="typography.html">General</a></li>
+		                  	<li><a href="typography.html#blockquotes">Blockquotes</a></li>
+		                  	<li><a href="typography.html#dropcaps">Dropcaps</a></li>	
+		                  	<li><a href="typography.html#taglineboxes">Tagline Boxes</a></li>	         
+		              	</ul>
+          			  </li>
+          			  <li class="dropdown-submenu"><a href="blocks.html">Blocks</a>
+		              	<ul class="dropdown-menu">
+		                  	<li><a href="blocks.html">Content Blocks</a></li>
+		                  	<li><a href="blocks.html#blocktitles">Block Titles</a></li>
+		                  	<li><a href="blocks.html#iconblocks">Icon Blocks</a></li>
+		              	</ul>
+          			  </li>
+          			  <li class="dropdown-submenu"><a href="components.html">CSS Components</a>
+		              	<ul class="dropdown-menu">
+		              		<li><a href="components.html#panels">Panels</a></li>
+		              		<li><a href="components.html#wells">Wells</a></li>
+		                  	<li><a href="components.html#alerts">Alerts</a></li>
+		                  	<li><a href="components.html#progress">Progress Bars</a></li>
+		                  	<li><a href="components.html#labels">Labels</a></li>
+		                  	<li><a href="components.html#pagination">Pagination</a></li>
+		              	</ul>
+          			  </li>
+          			  <li class="dropdown-submenu"><a href="#">JavaScript Components</a>
+		              	<ul class="dropdown-menu">
+		                  	<li><a href="carousel.html">Carousel</a></li>
+		                  	<li><a href="scroller.html">Slick Scroller</a></li>
+		                  	<li><a href="gallery.html">Image Gallery</a></li>
+		                  	<li><a href="tabs.html">Tabs</a></li>
+		                  	<li><a href="accordian.html">Accordian</a></li>
+		                  	<li><a href="tooltips.html">Tooltips</a></li>
+		              	</ul>
+          			  </li>
+          			  <li class="dropdown-submenu"><a href="buttons.html">Buttons</a>
+		              	<ul class="dropdown-menu">
+		                  	<li><a href="buttons.html">General Buttons</a></li>
+							<li><a href="buttons.html#buttonsizes">Button Sizes</a></li>
+							<li><a href="buttons.html#buttongroups">Button Groups</a></li>
+							<li><a href="buttons.html#buttondropdowns">Button Dropdowns</a></li>
+		              	</ul>
+          			  </li>
+          			  <li><a href="sections.html">Sections</a></li>
+					  <li><a href="icons.html">Icons</a></li>
+					  <li><a href="tables.html">Tables</a></li>
+					  <li><a href="forms.html">Forms</a></li>
+					  <li><a href="grid.html">Grid System</a></li>             
+					</ul>
+				  </li>
+				  <li><a href="about.html">About</a></li>
+				  <li><a href="services.html">Services</a></li>
+				  <li><a href="portfolio.html">Portfolio</a></li>
+				  <li class="dropdown">
+					<a href="blog-right-sidebar.html" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					  <li><a href="blog-right-sidebar.html"> Blog - Right Sidebar</a></li>
+					  <li><a href="blog-left-sidebar.html">Blog - Left Sidebar</a></li> 
+					  <li><a href="blog-no-sidebar.html">Blog - No Sidebar</a></li>        
+					</ul>
+				  </li>
+				  <li><a href="contact.html">Contact</a></li>
+				</ul>
+			  </div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	</header>
+
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">			
+					<ul class="accordian-list sticky">
+						<li data-toggle="collapse" data-target="#items-typography" class="collapse-heading">Typography <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-typography" class="collapse out">
+							<li><a href="typography.html">General</a></li>
+							<li><a href="typography.html#blockquotes">Blockquotes</a></li>
+							<li><a href="typography.html#dropcaps">Dropcaps</a></li>
+							<li><a href="typography.html#taglineboxes">Tagline Boxes</a></li>
+						</ul>
+						<li data-toggle="collapse" data-target="#items-blocks" class="active collapse-heading">Blocks <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-blocks" class="collapse out">
+							<li><a href="blocks.html">Content Blocks</a></li>
+							<li><a href="blocks.html#blocktitles">Block Titles</a></li>
+							<li><a href="blocks.html#iconblocks">Icon Blocks</a></li>
+						</ul>
+						<li data-toggle="collapse" data-target="#items-components" class="collapse-heading">Components <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-components" class="collapse out">
+							<li><a href="components.html#panels">Panels</a></li>
+							<li><a href="components.html#wells">Wells</a></li>
+							<li><a href="components.html#alerts">Alerts</a></li>
+							<li><a href="components.html#progress">Progress Bars</a></li>
+							<li><a href="components.html#labels">Labels</a></li>
+							<li><a href="components.html#pagination">Pagination</a></li>
+						</ul>
+						<li data-toggle="collapse" data-target="#items-javascript" class="collapse-heading">JavaScript <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-javascript" class="collapse out">
+							<li><a href="carousel.html">Carousel</a></li>
+							<li><a href="scroller.html">Slick Scroller</a></li>
+							<li><a href="gallery.html">Image Gallery</a></li>
+							<li><a href="tabs.html">Tabs</a></li>
+							<li><a href="accordian.html">Accordian</a></li>
+							<li><a href="tooltips.html">Tooltips & Popovers</a></li>
+						</ul>
+						<li data-toggle="collapse" data-target="#items-buttons" class="collapse-heading">Buttons <i class="fa fa-angle-down fa-1"></i></li>
+						<ul id="items-buttons" class="collapse out">
+							<li><a href="buttons.html">General Buttons</a></li>
+							<li><a href="buttons.html#buttonsizes">Button Sizes</a></li>
+							<li><a href="buttons.html#buttongroups">Button Groups</a></li>
+							<li><a href="buttons.html#buttondropdowns">Button Dropdowns</a></li>
+						</ul>
+						<li><a href="sections.html">Sections</a></li>
+						<li><a href="icons.html">Icons</a></li>
+						<li><a href="lists.html">Lists</a></li>
+						<li><a href="tables.html">Tables</a></li>
+						<li><a href="forms.html">Forms</a></li>
+						<li><a href="grid.html">Grid System</a></li>
+					</ul>
+
+				</div>
+				<div class="col-md-9">
+					<div class="row">
+						<h2 class="page-header">Blocks</h2>
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Default Block</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block">
+		              					<h3>block</h3>
+		              					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+		            				</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block"&gt;
+	&lt;h3&gt;..&lt;/h3&gt;
+	&lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;      
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-6 -->
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Primary Block</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-primary">
+		              					<h3>block-primary</h3>
+		              					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+		            				</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-primary"&gt;
+	&lt;h3&gt;..&lt;/h3&gt;
+	&lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;      
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div>
+					</div><!-- /. row -->
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Secondary Block</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-secondary">
+		              					<h3>block-secondary</h3>
+		              					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+		            				</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-secondary"&gt;
+	&lt;h3&gt;..&lt;/h3&gt;
+	&lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;      
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-6 -->
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Dark Block</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-dark">
+		              					<h3>block-dark</h3>
+		              					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+		            				</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-dark"&gt;
+	&lt;h3&gt;..&lt;/h3&gt;
+	&lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;      
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div>
+					</div><!-- /. row -->  
+
+
+					<div class="row">
+						<h2 class="page-header">Contextual Blocks</h2>
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Success Block</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-success">
+		              					<h3>block-success</h3>
+		              					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+		            				</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block-success"&gt;
+	&lt;h3&gt;..&lt;/h3&gt;
+	&lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;      
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-6 -->
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Info Block</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-info">
+		              					<h3>block-info</h3>
+		              					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+		            				</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-info"&gt;
+	&lt;h3&gt;..&lt;/h3&gt;
+	&lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;      
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div>
+					</div><!-- /. row -->
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Warning Block</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-warning">
+		              					<h3>block-secondary</h3>
+		              					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+		            				</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-warning"&gt;
+	&lt;h3&gt;..&lt;/h3&gt;
+	&lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;      
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-6 -->
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Danger Block</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-danger">
+		              					<h3>block-dark</h3>
+		              					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+		            				</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-danger"&gt;
+	&lt;h3&gt;..&lt;/h3&gt;
+	&lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;      
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div>
+					</div><!-- /. row -->  
+
+
+					<div class="row">
+						<h2 class="page-header">Block Variations</h2>
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Rounded</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                   <div class="block block-rounded block-dark">
+				              			<h3>block-rounded</h3>
+				              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem. Pellentesque venenatis sapien at nulla porttitor blandit. Phasellus pretium consequat lacinia.</p>
+				            		</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-round"&gt;
+  &lt;h3&gt;..&lt;/h3&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;         
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-6 -->
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Centered</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-center">
+				              			<h3>block-center</h3>
+				              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem. Pellentesque venenatis sapien at nulla porttitor blandit. Phasellus pretium consequat lacinia.</p>
+				            		</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-center"&gt;
+  &lt;h3&gt;..&lt;/h3&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;       
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div>
+					</div><!-- /. row --> 
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">With Border</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                   <div class="block block-border">
+				              			<h3>block-border</h3>
+				              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem. Pellentesque venenatis sapien at nulla porttitor blandit. Phasellus pretium consequat lacinia.</p>
+				            		</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-border"&gt;
+  &lt;h3&gt;..&lt;/h3&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;         
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-6 -->
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">No Padding</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-no-padding">
+				              			<h3>block-no-padding</h3>
+				              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem. Pellentesque venenatis sapien at nulla porttitor blandit. Phasellus pretium consequat lacinia.</p>
+				            		</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-no-padding"&gt;
+  &lt;h3&gt;..&lt;/h3&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;       
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div>
+					</div><!-- /. row --> 
+
+					<div class="target" id="blocktitles"></div>
+
+					<div class="row">
+						<h2 class="page-header">Block Titles</h2>
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Title 1</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                   <div class="block block-title-1">
+				              			<h3>block-title-1</h3>
+				              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem. Pellentesque venenatis sapien at nulla porttitor blandit. Phasellus pretium consequat lacinia.</p>
+				            		</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-title-1"&gt;
+  &lt;h3&gt;..&lt;/h3&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;         
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-6 -->
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Title 2</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-title-2">
+				              			<h3>block-title-2</h3>
+				              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem. Pellentesque venenatis sapien at nulla porttitor blandit. Phasellus pretium consequat lacinia.</p>
+				            		</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-title-2"&gt;
+  &lt;h3&gt;..&lt;/h3&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;       
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div>
+					</div><!-- /. row -->        
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Title 3</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                   <div class="block block-title-3">
+				              			<h3>block-title-3</h3>
+				              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem. Pellentesque venenatis sapien at nulla porttitor blandit. Phasellus pretium consequat lacinia.</p>
+				            		</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-title-3"&gt;
+  &lt;h3&gt;..&lt;/h3&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;         
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-6 -->
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Title 4</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-title-4">
+				              			<h3>block-title-4</h3>
+				              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem. Pellentesque venenatis sapien at nulla porttitor blandit. Phasellus pretium consequat lacinia.</p>
+				            		</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-title-4"&gt;
+  &lt;h3&gt;..&lt;/h3&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;       
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div>
+					</div><!-- /. row -->  
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Title 5</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                   <div class="block block-title-5">
+				              			<h3>block-title-5</h3>
+				              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem. Pellentesque venenatis sapien at nulla porttitor blandit. Phasellus pretium consequat lacinia.</p>
+				            		</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-title-5"&gt;
+  &lt;h3&gt;..&lt;/h3&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;         
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-6 -->
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Title 6</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-title-6">
+				              			<h3>block-title-6</h3>
+				              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem. Pellentesque venenatis sapien at nulla porttitor blandit. Phasellus pretium consequat lacinia.</p>
+				            		</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-title-6"&gt;
+  &lt;h3&gt;..&lt;/h3&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;       
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div>
+					</div><!-- /. row --> 
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Title 7</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                   <div class="block block-title-7">
+				              			<h3>block-title-7</h3>
+				              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem. Pellentesque venenatis sapien at nulla porttitor blandit. Phasellus pretium consequat lacinia.</p>
+				            		</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-title-7"&gt;
+  &lt;h3&gt;..&lt;/h3&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;         
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-6 -->
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Title 8</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-title-8">
+				              			<h3>block-title-8</h3>
+				              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem. Pellentesque venenatis sapien at nulla porttitor blandit. Phasellus pretium consequat lacinia.</p>
+				            		</div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-title-8"&gt;
+  &lt;h3&gt;..&lt;/h3&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;       
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div>
+					</div><!-- /. row -->   
+
+					<div class="target" id="iconblocks"></div>		
+
+					<div class="row">
+						<h2 class="page-header">Icon Blocks</h2>
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Block Icon Center</h3>
+				              	</div>
+				              	<div class="panel-body">
+				              		<div class="row">
+				              			<div class="col-md-4">
+				              				 <div class="block block-icon-center">
+						                   		<i class="fa fa-lightbulb-o fa-3"></i>
+						              			<h3>Block Icon Center</h3>
+						              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+				            				</div>
+				              			</div>
+				              			<div class="col-md-4">
+				              				 <div class="block block-primary block-icon-center">
+						                   		<i class="fa fa-camera fa-3"></i>
+						              			<h3>Block Icon Center</h3>
+						              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+				            				</div>
+				              			</div>
+				              			<div class="col-md-4">
+				              				 <div class="block block-secondary block-icon-center">
+						                   		<i class="fa fa-envelope fa-3"></i>
+						              			<h3>Block Icon Center</h3>
+						              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+				            				</div>
+				              			</div>
+				              		</div>
+				              		<div class="row">
+				              			<div class="col-md-4">
+				              				 <div class="block block-success block-icon-center">
+						                   		<i class="fa fa-check fa-3"></i>
+						              			<h3>Block Icon Center</h3>
+						              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+				            				</div>
+				              			</div>
+				              			<div class="col-md-4">
+				              				 <div class="block block-warning block-icon-center">
+						                   		<i class="fa fa-warning fa-3"></i>
+						              			<h3>Block Icon Center</h3>
+						              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+				            				</div>
+				              			</div>
+				              			<div class="col-md-4">
+				              				 <div class="block block-danger block-icon-center">
+						                   		<i class="fa fa-times-circle fa-3"></i>
+						              			<h3>Block Icon Center</h3>
+						              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+				            				</div>
+				              			</div>
+				              		</div>
+				                  
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-icon-center"&gt;
+	&lt;i class="fa fa-lightbulb-o fa-3"&gt;&lt;/i&gt;
+	&lt;h3&gt;...&lt;/h3&gt;
+	&lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="block block-primary block-icon-center"&gt;
+	&lt;i class="fa fa-lightbulb-o fa-3"&gt;&lt;/i&gt;
+	&lt;h3&gt;...&lt;/h3&gt;
+	&lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;    
+
+&lt;div class="block block-secondary block-icon-center"&gt;
+	&lt;i class="fa fa-lightbulb-o fa-3"&gt;&lt;/i&gt;
+	&lt;h3&gt;...&lt;/h3&gt;
+	&lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;  
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Block Icon Left</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                   	<div class="block block-icon-left">
+						                <div class="icon">
+						                  <i class="fa fa-home fa-4"></i>
+						                </div>
+						                <div class="icon-content">
+						                  <h3>Block Icon Left</h3>
+						                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+						                </div>
+						            </div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-icon-left"&gt;
+	&lt;div class="icon"&gt;
+	  &lt;i class="fa fa-home fa-4"&gt;&lt;/i&gt;
+	&lt;/div&gt;
+	&lt;div class="icon-content"&gt;
+	  &lt;h3&gt;...&lt;/h3&gt;
+	  &lt;p&gt;...&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;     
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-6 -->
+						<div class="col-md-6">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Block Icon Right</h3>
+				              	</div>
+				              	<div class="panel-body">
+				                    <div class="block block-icon-right">
+						                <div class="icon">
+						                  <i class="fa fa-home fa-4"></i>
+						                </div>
+						                <div class="icon-content">
+						                  <h3>Block Icon Right</h3>
+						                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+						                </div>
+						            </div>
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-icon-right"&gt;
+	&lt;div class="icon"&gt;
+	  &lt;i class="fa fa-home fa-4"&gt;&lt;/i&gt;
+	&lt;/div&gt;
+	&lt;div class="icon-content"&gt;
+	  &lt;h3&gt;...&lt;/h3&gt;
+	  &lt;p&gt;... &lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;      
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div>
+					</div><!-- /. row -->
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Block Icon Small</h3>
+				              	</div>
+				              	<div class="panel-body">
+				              		<div class="row">
+				              			<div class="col-md-4">
+				              				 <div class="block block-icon-small">
+						              			<h3> <i class="fa fa-globe"></i>Block Icon Small</h3>
+						              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+				            				</div>
+				              			</div>
+				              			<div class="col-md-4">
+				              				 <div class="block block-primary block-icon-small">
+						              			<h3> <i class="fa fa-info-circle"></i>Block Icon Small</h3>
+						              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+				            				</div>
+				              			</div>
+				              			<div class="col-md-4">
+				              				 <div class="block block-dark block-icon-small">
+						              			<h3> <i class="fa fa-question-circle"></i>Block Icon Small</h3>
+						              			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, sagittis vel imperdiet ut, tincidunt vitae lorem.</p>
+				            				</div>
+				              			</div>
+				              		</div>
+				                  
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-icon-small"&gt;
+	&lt;h3&gt; &lt;i class="fa fa-globe"&gt;&lt;/i&gt;...&lt;/h3&gt;
+	&lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;       
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Block Icon Large 1</h3>
+				              	</div>
+				              	<div class="panel-body">
+				              		<div class="row">
+				              			<div class="col-md-4">
+				              				 <div class="block block-icon-large-1">
+				              				 	<i class="fa fa-globe"></i>
+						              			<h3>Block Icon Large</h3>				              		
+				            				</div>
+				              			</div>
+				              			<div class="col-md-4">
+				              				 <div class="block block-icon-large-1-primary">
+				              				 	<i class="fa fa-info-circle"></i>
+						              			<h3>Block Icon Large</h3>					              			
+				            				</div>
+				              			</div>
+				              			<div class="col-md-4">
+				              				 <div class="block block-icon-large-1-secondary">
+				              				 	<i class="fa fa-question-circle"></i>
+						              			<h3>Block Icon Large</h3>
+				            				</div>
+				              			</div>
+				              		</div>
+				                  
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-icon-large-1"&gt;
+	&lt;i class="fa fa-globe"&gt;&lt;/i&gt;
+	&lt;h3&gt;Block Icon Large&lt;/h3&gt;				              		
+&lt;/div&gt;
+
+&lt;div class="block block-icon-large-1-primary"&gt;
+	&lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;
+	&lt;h3&gt;Block Icon Large&lt;/h3&gt;					              			
+&lt;/div&gt;
+	
+&lt;div class="block block-icon-large-1-secondary"&gt;
+	&lt;i class="fa fa-question-circle"&gt;&lt;/i&gt;
+	&lt;h3&gt;Block Icon Large&lt;/h3&gt;
+&lt;/div&gt;
+    
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+				              	<div class="panel-heading">
+				                	<h3 class="panel-title">Block Icon Large 2</h3>
+				              	</div>
+				              	<div class="panel-body">
+				              		<div class="row">
+				              			<div class="col-md-4">
+				              				 <div class="block block-icon-large-2">
+				              				 	<i class="fa fa-globe"></i>
+						              			<h3>Block Icon Large</h3>				              		
+				            				</div>
+				              			</div>
+				              			<div class="col-md-4">
+				              				 <div class="block block-icon-large-2-primary">
+				              				 	<i class="fa fa-info-circle"></i>
+						              			<h3>Block Icon Large</h3>					              			
+				            				</div>
+				              			</div>
+				              			<div class="col-md-4">
+				              				 <div class="block block-icon-large-2-secondary">
+				              				 	<i class="fa fa-question-circle"></i>
+						              			<h3>Block Icon Large</h3>
+				            				</div>
+				              			</div>
+				              		</div>
+				                  
+						        </div>
+				              	<div class="panel-footer">
+				<pre>
+&lt;div class="block block-icon-large-2"&gt;
+	&lt;i class="fa fa-globe"&gt;&lt;/i&gt;
+	&lt;h3&gt;Block Icon Large&lt;/h3&gt;				              		
+&lt;/div&gt;
+
+&lt;div class="block block-icon-large-2-primary"&gt;
+	&lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;
+	&lt;h3&gt;Block Icon Large&lt;/h3&gt;					              			
+&lt;/div&gt;
+	
+&lt;div class="block block-icon-large-2-secondary"&gt;
+	&lt;i class="fa fa-question-circle"&gt;&lt;/i&gt;
+	&lt;h3&gt;Block Icon Large&lt;/h3&gt;
+&lt;/div&gt;
+      
+				</pre>   
+				                </div>
+				            </div><!-- /. panel -->
+						</div><!-- /. col-12 -->
+					</div><!-- /. row -->
+    
+				</div><!-- /. col-9 -->
+			</div><!-- /. row -->	
+		</div><!-- /. container -->
+	</section>
+	
+	<footer class="footer-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h3>Who We Are</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin est turpis, commodo sit amet nunc non, mattis condimentum felis. Aliquam lacinia tempus felis at commodo.
+						</p>
+						<h5>Follow Us:</h5>
+						<i class="fa fa-2 fa-facebook"></i>&nbsp;&nbsp; <i class="fa fa-2 fa-twitter"></i>&nbsp;&nbsp; <i class="fa fa-2 fa-linkedin"></i>&nbsp;&nbsp; <i class="fa fa-2 fa-google-plus-square"></i>&nbsp;&nbsp; <i class="fa fa-2 fa-youtube"></i>
+				</div>
+				<div class="col-md-3">
+					<h3>Recent Posts</h3>
+					<ul class="blogroll">
+						<li>
+							Curabitur a mi imperdiet
+							<div><i class="fa fa-clock-o"></i> September 13, 2014</div>
+						</li>
+						<li>
+							Curabitur a mi imperdiet
+							<div><i class="fa fa-clock-o"></i> September 13, 2014</div>
+						</li>
+						<li>
+							Curabitur a mi imperdiet
+							<div><i class="fa fa-clock-o"></i> September 13, 2014</div>
+						</li>
+
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>Get In Touch</h3>
+					<p>Aliquam lacinia tempus felis at commodo</p>
+					<ul>
+						<li><i class="fa fa-home"></i> 555 Mass Ave st, Suite 7</li>
+						<li><i class="fa fa-globe"></i> Boston MA 02115</li>
+						<li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> support@codeskillet.com</li>
+						<li><i class="fa fa-phone"></i> <strong>Phone:</strong> (555) 555-5555</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3>Newsletter</h3>
+					<p>Sign up for our newsletter</p>
+					<form class="form-input-1 input-group">
+						<input type="email" class="form-control" placeholder="Enter Email Address...">
+						<span class="input-group-btn">
+							<button class="btn btn-primary">SUBMIT</button>
+						</span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/template.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>  
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+  </body>
+</html>

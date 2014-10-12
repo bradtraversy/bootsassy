@@ -1,0 +1,30 @@
+
+/* Smartphones */
+
+@media(max-width:568px){
+	
+}
+
+/* Tablets */
+
+@media(max-width:768px){
+	.block{
+		margin-bottom:15px;
+	}
+}
+
+/* Large Screen */
+
+@media(min-width:960px){
+	.sticky{
+		position:fixed;
+		width:200px !important;
+	}
+}
+
+@media(min-width:1180px){
+	.sticky{
+		position:fixed;
+		width:250px !important;
+	}
+}
