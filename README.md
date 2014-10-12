@@ -4,7 +4,7 @@
 
 
 ## Version ##
-**0.8.0**
+**0.9.0**
 
 
 ##Features##
@@ -13,12 +13,13 @@
 * **.scss** files structured by object (buttons.scss, header.scss, etc)
 * Lightbox and image overlay components
 * Slick jQuery image scroller
+* MixitUp image gallery
 * Modernizr for checking browser support
 
 ##Installation & Usage##
-BootSassy comes ready to go. You can upload the html and css files to your server and use it.
+BootSassy comes ready to go. You can upload the **'demo'** folder to your server or just include the files inside of the **'src'** folder into your project
 
-For template/theme development, it is strongly suggested that you use the SASS (.scss) files in the **scss** folder and use a compiler such as **[Scout](http://mhs.github.io/scout-app/)** to generate your CSS file rather than editing **"bootsassy.css"** directly. The .scss files are neatly organized by objects/elements
+For template/theme development, it is strongly suggested that you use the SASS (.scss) files in the **scss** folder rather than editing **"bootsassy.css"** directly. The .scss files are neatly organized by objects/elements (_buttons.scss, _nav.scss, etc). You will need to install Ruby in order to use SASS.
 
 Check the demo **"feature"** pages for code snippets and styling of blocks, buttons, lists, etc
 
@@ -33,6 +34,7 @@ To view a live demo, please go to - [http://codedemos.com/bootsassy](http://code
 * Font Awesome - [http://http://fortawesome.github.io/Font-Awesome/](http://fortawesome.github.io/Font-Awesome/)
 * Slick Image Scoller/Carousel - [http://kenwheeler.github.io/slick](http://kenwheeler.github.io/slick)
 * LightBox 2 - [http://lokeshdhakar.com/projects/lightbox2/](http://lokeshdhakar.com/projects/lightbox2/)
+* MixitUp - [https://mixitup.kunkalabs.com/](https://mixitup.kunkalabs.com/)
 * Modernizr - [http://modernizr.com](http://modernizr.com)
 
 ##Supported Browsers##

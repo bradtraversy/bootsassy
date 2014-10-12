@@ -79,3 +79,13 @@
 
 * Changed 'active' class menu items to correct item in each page in main navigation
 * Added an 'active' class to the accordion list menu
+
+### 0.9.0 / 10-12-2014 ###
+**Development**
+
+* Created a minified version of js - bootsassy.min.js
+
+**Changes**
+
+* Combined all 3rd party .js and .css files into the core bootsassy.js and bootsassy.css files
+
