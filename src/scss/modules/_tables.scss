@@ -1,0 +1,61 @@
+/* Tables */
+
+.table > thead > tr > td.primary, 
+.table > tbody > tr > td.primary, 
+.table > tfoot > tr > td.primary, 
+.table > thead > tr > th.primary, 
+.table > tbody > tr > th.primary, 
+.table > tfoot > tr > th.primary, 
+.table > thead > tr.primary > td, 
+.table > tbody > tr.primary > td, 
+.table > tfoot > tr.primary > td, 
+.table > thead > tr.primary > th, 
+.table > tbody > tr.primary > th, 
+.table > tfoot > tr.primary > th{
+	@include background-color($primary-color);
+}
+
+.table > thead > tr > td.secondary, 
+.table > tbody > tr > td.secondary, 
+.table > tfoot > tr > td.secondary, 
+.table > thead > tr > th.secondary, 
+.table > tbody > tr > th.secondary, 
+.table > tfoot > tr > th.secondary, 
+.table > thead > tr.secondary > td, 
+.table > tbody > tr.secondary > td, 
+.table > tfoot > tr.secondary > td, 
+.table > thead > tr.secondary > th, 
+.table > tbody > tr.secondary > th, 
+.table > tfoot > tr.secondary > th{
+	@include background-color($secondary-color);
+}
+
+.table > thead > tr > td.dark, 
+.table > tbody > tr > td.dark, 
+.table > tfoot > tr > td.dark, 
+.table > thead > tr > th.dark, 
+.table > tbody > tr > th.dark, 
+.table > tfoot > tr > th.dark, 
+.table > thead > tr.dark > td, 
+.table > tbody > tr.dark > td, 
+.table > tfoot > tr.dark > td, 
+.table > thead > tr.dark > th, 
+.table > tbody > tr.dark > th, 
+.table > tfoot > tr.dark > th{
+	@include background-color($dark-color);
+}
+
+.table > thead > tr > td.light, 
+.table > tbody > tr > td.light, 
+.table > tfoot > tr > td.light, 
+.table > thead > tr > th.light, 
+.table > tbody > tr > th.light, 
+.table > tfoot > tr > th.light, 
+.table > thead > tr.light > td, 
+.table > tbody > tr.light > td, 
+.table > tfoot > tr.light > td, 
+.table > thead > tr.light > th, 
+.table > tbody > tr.light > th, 
+.table > tfoot > tr.light > th{
+	@include background-color($light-color);
+}

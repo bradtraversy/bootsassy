@@ -1,0 +1,564 @@
+
+/* Headings */
+
+.heading-primary,
+.em-primary{
+	color:$primary-color;
+}
+
+.heading-secondary,
+.em-secondary{
+	color:$secondary-color;
+}
+
+.heading-light,
+.em-light{
+	color:$light-color;
+}
+
+.heading-dark,
+.em-dark{
+	color:$dark-color;
+}
+
+.heading-success,
+.em-sucess{
+	color:$success-color;
+}
+
+.heading-info,
+.em-info{
+	color:$info-color;
+}
+
+.heading-warning,
+.em-warning{
+	color:$warning-color;
+}
+
+.heading-danger,
+.em-danger{
+	color:$danger-color;
+}
+
+.heading-line{
+	@include add-border(2px, #666, bottom);
+	padding-bottom:7px;
+}
+
+.heading-line-primary{
+	@extend .heading-line;
+	border-color:$primary-color;
+	color:$primary-color;
+}
+
+.heading-line-secondary{
+	@extend .heading-line;
+	border-color:$secondary-color;
+	color:$secondary-color;
+}
+
+.heading-line-light{
+	@extend .heading-line;
+	border-color:darken($light-color, 20%);
+	color:darken($light-color, 20%);
+}
+
+.heading-line-dark{
+	@extend .heading-line;
+	border-color:$dark-color;
+	color:$dark-color;
+}
+
+.heading-line-success{
+	@extend .heading-line;
+	border-color:$success-color;
+	color:$success-color;
+}
+
+.heading-line-info{
+	@extend .heading-line;
+	border-color:$info-color;
+	color:$info-color;
+}
+
+.heading-line-warning{
+	@extend .heading-line;
+	border-color:$warning-color;
+	color:$warning-color;
+}
+
+.heading-line-danger{
+	@extend .heading-line;
+	border-color:$danger-color;
+	color:$danger-color;
+}
+
+.heading-fill{
+	padding:5px 10px;
+	background:#000;
+	color:#fff;
+}
+
+.heading-fill-primary{
+	@extend .heading-fill;
+	@include background-color($primary-color);
+}
+
+.heading-fill-secondary{
+	@extend .heading-fill;
+	@include background-color($secondary-color);
+}
+
+.heading-fill-light{
+	@extend .heading-fill;
+	@include background-color($light-color);
+}
+
+.heading-fill-dark{
+	@extend .heading-fill;
+	@include background-color($dark-color);
+}
+
+.heading-fill-success{
+	@extend .heading-fill;
+	@include background-color($success-color);
+}
+
+.heading-fill-info{
+	@extend .heading-fill;
+	@include background-color($info-color);
+}
+
+.heading-fill-warning{
+	@extend .heading-fill;
+	@include background-color($warning-color);
+}
+
+.heading-fill-danger{
+	@extend .heading-fill;
+	@include background-color($danger-color);
+}
+
+
+/* Code */
+
+code {
+
+}
+
+/* Dropcaps */
+
+.dropcap{
+	float: left; 
+	color: $primary-color; 
+	font-size: 75px; 
+	line-height: 60px; 
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+	font-family: Georgia; 
+}
+
+.dropcap-bg{
+	float: left; 
+	background:$primary-color;
+	color: $primary-text-color; 
+	font-size: 75px; 
+	line-height: 60px; 
+	padding:5px 10px;
+	margin-right:10px;
+	font-family: Georgia; 
+}
+
+.dropcap-bg-round{
+	@extend .dropcap-bg;
+	font-size:70px;
+	padding:8px 18px 8px 18px;
+	border-radius:50%; 
+}
+
+/* Blockquotes */
+
+.blockquote-reverse, blockquote.pull-right {
+	padding-right: 15px;
+	padding-left: 0;
+	text-align: right;
+	border-right: 5px solid #eee;
+	border-left: 0;
+}
+
+.blockquote-primary {
+	border-bottom: solid 1px #eee;
+	@include background-color($primary-color);
+}
+
+.blockquote-primary footer{
+	color:$primary-text-color;
+}
+
+.blockquote-secondary{
+	border-bottom: solid 1px #eee;
+	@include background-color($secondary-color);
+}
+
+.blockquote-secondary footer{
+	color:$secondary-text-color;
+}
+
+.blockquote-dark {
+	border-bottom: solid 1px #eee;
+	@include background-color($dark-color);
+}
+
+.blockquote-dark footer{
+	color:$dark-text-color;
+}
+
+.blockquote-light {
+	border-bottom: solid 1px #eee;
+	@include background-color($light-color);
+}
+
+.blockquote-light footer{
+	color:$light-text-color;
+}
+
+.blockquote-no-border{
+	border:0 !important;
+}
+
+.blockquote-border-primary{
+	border-color:$primary-color;
+}
+
+.blockquote-border-secondary{
+	border-color:$secondary-color;
+}
+
+.blockquote-border-light{
+	border-color:$light-color;
+}
+
+.blockquote-border-dark{
+	border-color:$dark-color;
+}
+
+.tag-box{
+	@include add-border(1px, $light-color,all);
+	padding:8px 10px;
+	margin:10px;
+	margin-bottom:20px;
+}
+
+.tag-box-1{
+	@extend .tag-box;
+	border-color:darken($light-color,10%);
+}
+
+.tag-box-2{
+	@extend .tag-box;
+	border-style: dashed;
+	border-width:1px;
+	border-color:darken($light-color,15%);
+}
+
+.tag-box-3{
+	@extend .tag-box;
+	background-color:$light-color;
+}
+
+
+/* Tag Box Primary */
+
+.tag-box-primary-1{
+	@extend .tag-box;
+	border-color:$primary-color;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$primary-color;
+	}
+}
+
+.tag-box-primary-2{
+	@extend .tag-box;
+	border-top-color:$primary-color;
+	border-top-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$primary-color;
+	}
+}
+
+.tag-box-primary-3{
+	@extend .tag-box;
+	border-bottom-color:$primary-color;
+	border-bottom-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$primary-color;
+	}
+}
+
+.tag-box-primary-4{
+	@extend .tag-box;
+	border-left-color:$primary-color;
+	border-left-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$primary-color;
+	}
+}
+
+/* Tag Box Secondary*/
+
+.tag-box-secondary-1{
+	@extend .tag-box;
+	border-color:$secondary-color;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$secondary-color;
+	}
+}
+
+.tag-box-secondary-2{
+	@extend .tag-box;
+	border-top-color:$secondary-color;
+	border-top-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$secondary-color;
+	}
+}
+
+.tag-box-secondary-3{
+	@extend .tag-box;
+	border-bottom-color:$secondary-color;
+	border-bottom-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$secondary-color;
+	}
+}
+
+.tag-box-secondary-4{
+	@extend .tag-box;
+	border-left-color:$secondary-color;
+	border-left-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$secondary-color;
+	}
+}
+
+/* Tag Box Dark */
+
+.tag-box-dark-1{
+	@extend .tag-box;
+	border-color:$dark-color;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$dark-color;
+	}
+}
+
+.tag-box-dark-2{
+	@extend .tag-box;
+	border-top-color:$dark-color;
+	border-top-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$dark-color;
+	}
+}
+
+.tag-box-dark-3{
+	@extend .tag-box;
+	border-bottom-color:$dark-color;
+	border-bottom-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$dark-color;
+	}
+}
+
+.tag-box-dark-4{
+	@extend .tag-box;
+	border-left-color:$dark-color;
+	border-left-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$dark-color;
+	}
+}
+
+/* Tag Box Success */
+
+.tag-box-success-1{
+	@extend .tag-box;
+	border-color:$success-color;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$success-color;
+	}
+}
+
+.tag-box-success-2{
+	@extend .tag-box;
+	border-top-color:$success-color;
+	border-top-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$success-color;
+	}
+}
+
+.tag-box-success-3{
+	@extend .tag-box;
+	border-bottom-color:$success-color;
+	border-bottom-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$success-color;
+	}
+}
+
+.tag-box-success-4{
+	@extend .tag-box;
+	border-left-color:$success-color;
+	border-left-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$success-color;
+	}
+}
+
+/* Tag Box Info */
+
+.tag-box-info-1{
+	@extend .tag-box;
+	border-color:$info-color;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$info-color;
+	}
+}
+
+.tag-box-info-2{
+	@extend .tag-box;
+	border-top-color:$info-color;
+	border-top-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$info-color;
+	}
+}
+
+.tag-box-info-3{
+	@extend .tag-box;
+	border-bottom-color:$info-color;
+	border-bottom-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$info-color;
+	}
+}
+
+.tag-box-info-4{
+	@extend .tag-box;
+	border-left-color:$info-color;
+	border-left-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$info-color;
+	}
+}
+
+/* Tag Box Warning */
+
+.tag-box-warning-1{
+	@extend .tag-box;
+	border-color:$warning-color;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$warning-color;
+	}
+}
+
+.tag-box-warning-2{
+	@extend .tag-box;
+	border-top-color:$warning-color;
+	border-top-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$warning-color;
+	}
+}
+
+.tag-box-warning-3{
+	@extend .tag-box;
+	border-bottom-color:$warning-color;
+	border-bottom-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$warning-color;
+	}
+}
+
+.tag-box-warning-4{
+	@extend .tag-box;
+	border-left-color:$warning-color;
+	border-left-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$warning-color;
+	}
+}
+
+/* Tag Box Danger */
+
+.tag-box-danger-1{
+	@extend .tag-box;
+	border-color:$danger-color;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$danger-color;
+	}
+}
+
+.tag-box-danger-2{
+	@extend .tag-box;
+	border-top-color:$danger-color;
+	border-top-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$danger-color;
+	}
+}
+
+.tag-box-danger-3{
+	@extend .tag-box;
+	border-bottom-color:$danger-color;
+	border-bottom-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$danger-color;
+	}
+}
+
+.tag-box-danger-4{
+	@extend .tag-box;
+	border-left-color:$danger-color;
+	border-left-width:4px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:$danger-color;
+	}
+}
+
+.show-grid [class^=col-] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #f4f4f4;
+	border: 1px solid #ddd;
+}
