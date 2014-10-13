@@ -1,7 +1,7 @@
 /* ==========================================================================  
 BootSassy Framework 
 Author: Brad Traversy - http://www.codeskillet.com 
-Version: 1.0.1    
+Version: 0.9.0    
 */
 
  /* Fonts - Site fonts
@@ -31,12 +31,14 @@ Version: 1.0.1
  @import 'modules/_sections.scss'; 
  @import 'modules/_blocks.scss'; 
  @import 'modules/_buttons.scss'; 
- @import 'modules/_lists.scss'; 
+ @import 'modules/_lists.scss';
+ @import 'modules/_images.scss'; 
  @import 'modules/_tables.scss';   
  @import 'modules/_forms.scss';    
  @import 'modules/_components.scss';
  @import 'modules/_accordian.scss';
- @import 'modules/_portfolio.scss'; 
+ @import 'modules/_tabs.scss';
+ @import 'modules/_gallery.scss'; 
  @import 'modules/_slick.scss';
  @import 'modules/_misc.scss';
 

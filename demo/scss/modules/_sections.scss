@@ -139,3 +139,24 @@ section h2{margin-top:5px;}
 	background: url($showcase-image) center center no-repeat;
 	background-size: cover;
 }
+
+/* Section Slogan */
+.section-slogan{
+	text-align: center;
+	padding:60px 0 60px 0;
+}
+
+.section-slogan h1,
+.section-slogan h2,
+.section-slogan h3{
+	margin-bottom:40px;
+	line-height:1.5em;
+}
+
+.section-primary .page-header,
+.section-secondary .page-header,
+.section-dark .page-header,
+.section-light .page-header{
+	margin-top:0;
+	padding-top:0;
+}

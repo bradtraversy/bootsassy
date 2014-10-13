@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Welcome | Bootsassy Template</title>
+		<title>About | Bootsassy Template</title>
 
 		<!-- Stylesheets -->
 	    <link href="css/bootstrap.css" rel="stylesheet">
@@ -28,7 +28,7 @@
 			  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav navbar-right">
-				  <li class="active"><a href="index.html">Home</a></li>
+				  <li><a href="index.html">Home</a></li>
 				  <li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
@@ -84,15 +84,7 @@
 				  </li>
 				  <li><a href="about.html">About</a></li>
 				  <li><a href="services.html">Services</a></li>
-				  <li class="dropdown">
-					<a href="portfolio-col-3.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio<span class="caret"></span></a>
-					<ul class="dropdown-menu" role="menu">
-					  <li><a href="portfolio-col-4.html"> Portfolio 4 Column</a></li>
-					  <li><a href="portfolio-col-3.html"> Portfolio 3 Column</a></li>  
-					  <li><a href="portfolio-col-2.html"> Portfolio 2 Column</a></li>     
-					  <li><a href="portfolio-col-1.html"> Portfolio 1 Column</a></li> 
-					</ul>
-				  </li>
+				  <li class="active"><a href="portfolio.html">Portfolio</a></li>
 				  <li class="dropdown">
 					<a href="blog-right-sidebar.html" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
@@ -107,24 +99,12 @@
 			</div><!-- /.container -->
 		</nav>
 	</header>
-	
-	<!-- Showcase Section -->
-	<section class="section-showcase">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-            		
-				</div>
-			</div>
-		</div>
-	</section>
-
 
 	<section class="section-dark-e">
 	    <div class="container">
 	      <div class="row">
 	        <div class="col-md-9">
-				<h2>All code snippets can be found under the <span class="em-primary">"Features"</span> menu item</h2>
+				<h2 class="margin-4">All code snippets can be found under the <span class="em-primary">"Features"</span> menu item</h2>
 	        </div>
 	        <div class="col-md-3">
 				<a href="typography.html" class="btn btn-dark btn-border-1 btn-lg pull-right">Read More</a>
@@ -136,52 +116,106 @@
 	<section>
 		<div class="container">
 			<div class="row">
-      			<div class="col-md-4">
-      				 <div class="block block-primary block-icon-center">
-                   		<i class="fa fa-check fa-3"></i>
-              			<h3>Bootstrap 3</h3>
-              			<p>In addition to all of our custom classes, all of the Bootstrap 3 classes and features can be used with BootSassy</p>
-    				</div>
-      			</div>
-      			<div class="col-md-4">
-      				 <div class="block block-secondary block-icon-center">
-                   		<i class="fa fa-align-left fa-3"></i>
-              			<h3>Responsive Layout</h3>
-              			<p>BootSassy is 100% responsive and looks great on all devices and screen sizes. We use the Bootstrap grid classes</p>
-    				</div>
-      			</div>
-      			<div class="col-md-4">
-      				 <div class="block block-dark block-icon-center">
-                   		<i class="fa fa-gears fa-3"></i>
-              			<h3>JavaScript Widgets</h3>
-              			<p>BootSassy comes packaged with all Bootstrap JavaScript widgets as well as a portfolio gallery, image scroller and lightboxes</p>
-    				</div>
+      			<div class="col-md-12">
+      				<ul id="filters" class="clearfix">
+					  	<li><span class="filter active" data-filter="category1 category2 category3">All</span></li>
+					  	<li><span class="filter" data-filter="category1">Category 1</span></li>
+					  	<li><span class="filter" data-filter="category2">Category 2</span></li>
+					</ul>
+					<div id="gallery">
+					  	<div class="gallery-item category1">
+					    	<div class="gallery-wrapper">       
+					     		<a href="img/demo_content/image1.jpg" data-lightbox="our-work" data-title="Project One"><img src="img/demo_content/image1.jpg" alt="" /></a>
+						    	<div class="label">
+						      		<div class="label-text">
+						      		<span>Project One</span>				   
+						      		</div>
+						      		<div class="label-default"></div>
+					    		</div>
+					    	</div>
+					  	</div>        
+
+					 	<div class="gallery-item category1">
+					    	<div class="gallery-wrapper">       
+					     		<a href="img/demo_content/image2.jpg" data-lightbox="our-work" data-title="Project Two"><img src="img/demo_content/image2.jpg" alt="" /></a>
+						    	<div class="label">
+						      		<div class="label-text">
+						      		<span>Project Two</span>				   
+						      		</div>
+						      		<div class="label-default"></div>
+					    		</div>
+					    	</div>
+					  	</div>        
+
+					  	<div class="gallery-item category2">
+					    	<div class="gallery-wrapper">       
+					     		<a href="img/demo_content/image3.jpg" data-lightbox="our-work" data-title="Project Three"><img src="img/demo_content/image3.jpg" alt="" /></a>
+						    	<div class="label">
+						      		<div class="label-text">
+						      		<span>Project Three</span>				   
+						      		</div>
+						      		<div class="label-default"></div>
+					    		</div>
+					    	</div>
+					  	</div>        
+
+					  	<div class="gallery-item category1">
+					    	<div class="gallery-wrapper">       
+					     		<a href="img/demo_content/image4.jpg" data-lightbox="our-work" data-title="Project Four"><img src="img/demo_content/image4.jpg" alt="" /></a>
+						    	<div class="label">
+						      		<div class="label-text">
+						      		<span>Project Four</span>				   
+						      		</div>
+						      		<div class="label-default"></div>
+					    		</div>
+					    	</div>
+					  	</div>        
+
+					  	<div class="gallery-item category2 category1">
+					    	<div class="gallery-wrapper">       
+					     		<a href="img/demo_content/image5.jpg" data-lightbox="our-work" data-title="Project Five"><img src="img/demo_content/image5.jpg" alt="" /></a>
+						    	<div class="label">
+						      		<div class="label-text">
+						      		<span>Project Five</span>				   
+						      		</div>
+						      		<div class="label-default"></div>
+					    		</div>
+					    	</div>
+					  	</div>        
+
+					  	<div class="gallery-item category2">
+					    	<div class="gallery-wrapper">       
+					     		<a href="img/demo_content/image6.jpg" data-lightbox="our-work" data-title="Project Six"><img src="img/demo_content/image6.jpg" alt="" /></a>
+						    	<div class="label">
+						      		<div class="label-text">
+						      		<span>Project Six</span>				   
+						      		</div>
+						      		<div class="label-default"></div>
+					    		</div>
+					    	</div>
+					  	</div>        				          				 
+					</div>
       			</div>
       		</div>
 		</div>
 	</section>
 
-	<section class="section-primary-e">
-	    <div class="container">
-	      <div class="row">
-	        <div class="col-md-8">
-				<h2>SASS</h2>
-				<p class="lead">Be sure to use the SASS files (.scss) when creating your template. SASS offers the following features...</p>
-				<ul class="list-large">
-					<li><i class="fa fa-check-square"></i> CSS Variables</li>
-					<li><i class="fa fa-check-square"></i> Nested Elements</li>
-					<li><i class="fa fa-check-square"></i> Importing / Partials</li>
-					<li><i class="fa fa-check-square"></i> Conditional Statements</li>
-					<li><i class="fa fa-check-square"></i> Mixins</li>
-					<li><i class="fa fa-check-square"></i> Color Functions</li>
-				</ul>
-	        </div>
-	        <div class="col-md-4">
-				<img class="pull-right" src="img/demo_content/sass.png">
-	        </div>
-	      </div>
-	    </div>
-	</section>
+	 <section class="section-primary">
+        <div class="container">
+          <!-- What we do -->
+          <h2 class="page-header">Recent Testimonial</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <blockquote class="blockquote blockquote-reverse">
+              <h1>"I do not believe you can do today's job with yesterday's methods and be in business tomorrow"</h1>
+              <footer><em>Nelson Jackson</em></footer>
+            </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
 	
 	<footer class="footer-main">
 		<div class="container">

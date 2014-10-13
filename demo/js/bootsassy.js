@@ -29,7 +29,7 @@ if (Modernizr.touch) {
 });
 
 
-/* PORTFOLIO GALLERY */
+/* IMAGE GALLERY */
 $(function () {
         
         var filterList = {
@@ -38,8 +38,8 @@ $(function () {
           
             // MixItUp plugin
             // http://mixitup.io
-            $('#portfoliolist').mixitup({
-              targetSelector: '.portfolio',
+            $('#gallery').mixitup({
+              targetSelector: '.gallery-item',
               filterSelector: '.filter',
               effects: ['fade'],
               easing: 'snap',
@@ -52,7 +52,7 @@ $(function () {
           hoverEffect: function () {
           
             // Simple parallax effect
-            $('#portfoliolist .portfolio').hover(
+            $('#gallery .gallery-item').hover(
               function () {
                 $(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
                 $(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');       

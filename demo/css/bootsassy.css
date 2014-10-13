@@ -2,7 +2,7 @@
 /* ==========================================================================  
 BootSassy Framework 
 Author: Brad Traversy - http://www.codeskillet.com 
-Version: 1.0.1    
+Version: 0.9.0    
 */
 /* Fonts - Site fonts
 ========================================================================== */
@@ -4279,6 +4279,42 @@ section h2 {
   background-size: cover;
 }
 
+/* Section Slogan */
+.section-slogan {
+  text-align: center;
+  padding: 60px 0 60px 0;
+}
+
+.section-slogan h1,
+.section-slogan h2,
+.section-slogan h3 {
+  margin-bottom: 40px;
+  line-height: 1.5em;
+}
+
+.section-primary .page-header, .section-primary-a .page-header, .section-primary-b .page-header, .section-primary-c .page-header, .section-primary-d .page-header, .section-primary-e .page-header,
+.section-secondary .page-header,
+.section-secondary-a .page-header,
+.section-secondary-b .page-header,
+.section-secondary-c .page-header,
+.section-secondary-d .page-header,
+.section-secondary-e .page-header,
+.section-dark .page-header,
+.section-dark-a .page-header,
+.section-dark-b .page-header,
+.section-dark-c .page-header,
+.section-dark-d .page-header,
+.section-dark-e .page-header,
+.section-light .page-header,
+.section-light-a .page-header,
+.section-light-b .page-header,
+.section-light-c .page-header,
+.section-light-d .page-header,
+.section-light-e .page-header {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 /* Blocks */
 .block, .block-primary, .block-secondary, .block-light, .block-dark, .block-success, .block-info, .block-warning, .block-danger, .block-center, .block-round, .block-icon-center, .block-icon-left, .block-icon-right, .block-icon-small, .block-icon-large-1, .block-icon-large-1-primary, .block-icon-large-1-secondary, .block-icon-large-1-dark, .block-icon-large-1-light, .block-icon-large-2, .block-icon-large-2-primary, .block-icon-large-2-secondary, .block-icon-large-2-dark, .block-icon-large-2-light {
   -webkit-box-sizing: "border-box";
@@ -4911,6 +4947,51 @@ ul.blogroll li {
   padding: 5px 0;
 }
 
+img {
+  width: 100%;
+}
+
+.img-border, .img-border-primary, .img-border-secondary, .img-border-dark, .img-border-light {
+  border: 2px solid #aaaaaa;
+}
+
+.img-border-space, .img-border-space-primary, .img-border-space-secondary, .img-border-space-dark, .img-border-space-light {
+  border: 1px solid #aaaaaa;
+  padding: 3px;
+}
+
+.img-border-primary {
+  border-color: #00aff0;
+}
+
+.img-border-secondary {
+  border-color: #2f6288;
+}
+
+.img-border-dark {
+  border-color: #333333;
+}
+
+.img-border-light {
+  border-color: #f4f4f4;
+}
+
+.img-border-space-primary {
+  border-color: #00aff0;
+}
+
+.img-border-space-secondary {
+  border-color: #2f6288;
+}
+
+.img-border-space-dark {
+  border-color: #333333;
+}
+
+.img-border-space-light {
+  border-color: #f4f4f4;
+}
+
 /* Tables */
 .table > thead > tr > td.primary,
 .table > tbody > tr > td.primary,
@@ -5293,6 +5374,69 @@ ul.blogroll li {
   background: #4d4d4d;
 }
 
+.tab-content {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.tab-content img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.tab-content h1, .tab-content h2, .tab-content h3, .tab-content h4 {
+  margin: 0;
+  padding: 5px 0 15px 0;
+}
+
+.tabs-primary .tab-content {
+  background: #00aff0;
+  color: white;
+}
+
+.tabs-primary .nav-tabs > li.active > a,
+.tabs-primary .nav-tabs > li.active > a:hover,
+.tabs-primary .nav-tabs > li.active > a:focus {
+  background: #00aff0;
+  color: white;
+}
+
+.tabs-secondary .tab-content {
+  background: #2f6288;
+  color: white;
+}
+
+.tabs-secondary .nav-tabs > li.active > a,
+.tabs-secondary .nav-tabs > li.active > a:hover,
+.tabs-secondary .nav-tabs > li.active > a:focus {
+  background: #2f6288;
+  color: white;
+}
+
+.tabs-dark .tab-content {
+  background: #333333;
+  color: white;
+}
+
+.tabs-dark .nav-tabs > li.active > a,
+.tabs-dark .nav-tabs > li.active > a:hover,
+.tabs-dark .nav-tabs > li.active > a:focus {
+  background: #333333;
+  color: white;
+}
+
+.tabs-light .tab-content {
+  background: #f4f4f4;
+  color: #666666;
+}
+
+.tabs-light .nav-tabs > li.active > a,
+.tabs-light .nav-tabs > li.active > a:hover,
+.tabs-light .nav-tabs > li.active > a:focus {
+  background: #f4f4f4;
+  color: #666666;
+}
+
 /* Navigation Filters */
 #filters {
   margin: 1%;
@@ -5318,7 +5462,7 @@ ul.blogroll li {
 }
 
 /* Portfolio Component */
-#portfoliolist .portfolio {
+#gallery .gallery-item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -5329,31 +5473,43 @@ ul.blogroll li {
   overflow: hidden;
 }
 
-.portfolio-wrapper {
+.gallery-col-3 .gallery-item, .gallery-col-3 .gallery-item, .gallery-col-3 .gallery-col-4 .gallery-item, .gallery-col-4 .gallery-col-3 .gallery-item, .gallery-col-3 .gallery-col-2 .gallery-item, .gallery-col-2 .gallery-col-3 .gallery-item, .gallery-col-3 .gallery-col-1 .gallery-item, .gallery-col-1 .gallery-col-3 .gallery-item {
+  width: 23% !important;
+}
+
+.gallery-col-4 .gallery-item, .gallery-col-4 .gallery-col-3 .gallery-item, .gallery-col-3 .gallery-col-4 .gallery-item, .gallery-col-4 .gallery-item, .gallery-col-4 .gallery-col-2 .gallery-item, .gallery-col-2 .gallery-col-4 .gallery-item, .gallery-col-4 .gallery-col-1 .gallery-item, .gallery-col-1 .gallery-col-4 .gallery-item {
+  width: 23% !important;
+}
+
+.gallery-col-2 .gallery-item, .gallery-col-2 .gallery-col-3 .gallery-item, .gallery-col-3 .gallery-col-2 .gallery-item, .gallery-col-2 .gallery-col-4 .gallery-item, .gallery-col-4 .gallery-col-2 .gallery-item, .gallery-col-2 .gallery-item, .gallery-col-2 .gallery-col-1 .gallery-item, .gallery-col-1 .gallery-col-2 .gallery-item {
+  width: 48% !important;
+}
+
+.gallery-col-1 .gallery-item, .gallery-col-1 .gallery-col-3 .gallery-item, .gallery-col-3 .gallery-col-1 .gallery-item, .gallery-col-1 .gallery-col-4 .gallery-item, .gallery-col-4 .gallery-col-1 .gallery-item, .gallery-col-1 .gallery-col-2 .gallery-item, .gallery-col-2 .gallery-col-1 .gallery-item, .gallery-col-1 .gallery-item {
+  width: 100% !important;
+}
+
+.gallery-wrapper {
   overflow: hidden;
   position: relative !important;
   background: #666;
   cursor: pointer;
 }
 
-.portfolio .label {
+.gallery-item .label, .gallery-col-3 .gallery-item .label, .gallery-col-4 .gallery-item .label, .gallery-col-2 .gallery-item .label, .gallery-col-1 .gallery-item .label {
   position: absolute;
   width: 100%;
   height: 40px;
   bottom: -40px;
+  font-size: 110% !important;
 }
 
-.portfolio img {
-  max-width: 100%;
-  position: relative;
-}
-
-.portfolio .label span {
+.gallery-item .label span, .gallery-col-3 .gallery-item .label span, .gallery-col-4 .gallery-item .label span, .gallery-col-2 .gallery-item .label span, .gallery-col-1 .gallery-item .label span {
   color: #fff;
   line-height: 1.5em;
 }
 
-.portfolio .label-default {
+.gallery-item .label-default, .gallery-col-3 .gallery-item .label-default, .gallery-col-4 .gallery-item .label-default, .gallery-col-2 .gallery-item .label-default, .gallery-col-1 .gallery-item .label-default {
   background: #00aff0;
   color: white;
   width: 100%;
@@ -5363,19 +5519,20 @@ ul.blogroll li {
   left: 0;
 }
 
-.portfolio .label-text {
+.gallery-item .label-text, .gallery-col-3 .gallery-item .label-text, .gallery-col-4 .gallery-item .label-text, .gallery-col-2 .gallery-item .label-text, .gallery-col-1 .gallery-item .label-text {
   color: #fff;
   position: relative;
   z-index: 500;
   padding: 5px 8px;
 }
 
-.portfolio .text-category {
+.gallery-item .text-category, .gallery-col-3 .gallery-item .text-category, .gallery-col-4 .gallery-item .text-category, .gallery-col-2 .gallery-item .text-category, .gallery-col-1 .gallery-item .text-category {
   display: block;
   font-size: 9px;
 }
 
-.portfolio img {
+.gallery-item img, .gallery-col-3 .gallery-item img, .gallery-col-4 .gallery-item img, .gallery-col-2 .gallery-item img, .gallery-col-1 .gallery-item img {
+  position: relative;
   display: block;
   margin: 0;
   padding: 0;

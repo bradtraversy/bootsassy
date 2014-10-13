@@ -84,7 +84,15 @@
 				  </li>
 				  <li><a href="about.html">About</a></li>
 				  <li><a href="services.html">Services</a></li>
-				  <li><a href="portfolio.html">Portfolio</a></li>
+				  <li class="dropdown">
+					<a href="portfolio-col-3.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					  <li><a href="portfolio-col-4.html"> Portfolio 4 Column</a></li>
+					  <li><a href="portfolio-col-3.html"> Portfolio 3 Column</a></li>  
+					  <li><a href="portfolio-col-2.html"> Portfolio 2 Column</a></li>     
+					  <li><a href="portfolio-col-1.html"> Portfolio 1 Column</a></li> 
+					</ul>
+				  </li>
 				  <li class="dropdown">
 					<a href="blog-right-sidebar.html" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
@@ -154,7 +162,6 @@
 				</div>
 				<div class="col-md-9">
 					<div class="row">
-						<h2 class="page-header">Portfolio Image Gallery</h2>
 			            <div class="col-lg-12">         
 			             <div class="panel panel-default">
 			              <div class="panel-heading">
@@ -166,181 +173,186 @@
 			                <li><span class="filter" data-filter="category1">Category 1</span></li>
 			                <li><span class="filter" data-filter="category2">Category 2</span></li>
 			              </ul>
-			              <div id="portfoliolist">
-			                <div class="portfolio category1" data-cat="category1">
-			                  <div class="portfolio-wrapper">       
-			                   <a href="img/demo_content/image1.jpg" data-lightbox="our-work" data-title="Project One"><img src="img/demo_content/image1.jpg" alt="" /></a>
-			                    <div class="label">
-			                      <div class="label-text">
-			                        <span>Project One</span>
-			                        <span class="text-category">Category 1</span>
-			                      </div>
-			                      <div class="label-default"></div>
-			                    </div>
-			                  </div>
-			                </div>        
+			              <div id="gallery">
+							  	<div class="gallery-item category1">
+							    	<div class="gallery-wrapper">       
+							     		<a href="img/demo_content/image1.jpg" data-lightbox="our-work" data-title="Project One"><img src="img/demo_content/image1.jpg" alt="" /></a>
+								    	<div class="label">
+								      		<div class="label-text">
+								      		<span>Project One</span>				   
+								      		</div>
+								      		<div class="label-default"></div>
+							    		</div>
+							    	</div>
+							  	</div>        
 
-			                <div class="portfolio category1" data-cat="category1">
-			                  <div class="portfolio-wrapper">     
-			                    <a href="img/demo_content/image2.jpg" data-lightbox="our-work" data-title="Project Two"><img src="img/demo_content/image2.jpg" alt="" /></a>
-			                    <div class="label">
-			                      <div class="label-text">
-			                       <span>Project Two</span>
-			                        <span class="text-category">Category 1</span>
-			                      </div>
-			                      <div class="label-default"></div>
-			                    </div>
-			                  </div>
-			                </div>    
-			                
-			                <div class="portfolio category1" data-cat="category1">
-			                  <div class="portfolio-wrapper">           
-			                    <a href="img/demo_content/image3.jpg" data-lightbox="our-work" data-title="Project Three"><img src="img/demo_content/image3.jpg" alt="" /></a>
-			                    <div class="label">
-			                      <div class="label-text">
-			                        <span>Project Three</span>
-			                        <span class="text-category">Category 1</span>
-			                      </div>
-			                      <div class="label-default"></div>
-			                    </div>
-			                  </div>
-			                </div>        
-			                
-			                <div class="portfolio category2" data-cat="category2">
-			                  <div class="portfolio-wrapper">     
-			                    <a href="img/demo_content/image4.jpg" data-lightbox="our-work" data-title="Project Four"><img src="img/demo_content/image4.jpg" alt="" /></a>
-			                    <div class="label">
-			                      <div class="label-text">
-			                        <span>Project Four</span>
-			                        <span class="text-category">Category 2</span>
-			                      </div>
-			                      <div class="label-default"></div>
-			                    </div>
-			                  </div>
-			                </div>  
-			                      
-			                <div class="portfolio category1" data-cat="category1">
-			                  <div class="portfolio-wrapper">
-			                    <a href="img/demo_content/image5.jpg" data-lightbox="our-work" data-title="Project Five"><img src="img/demo_content/image5.jpg" alt="" /></a>
-			                    <div class="label">
-			                      <div class="label-text">
-			                       <span>Project Five</span>
-			                        <span class="text-category">Category 1</span>
-			                      </div>
-			                      <div class="label-default"></div>
-			                    </div>
-			                  </div>
-			                </div>      
-			                
-			                <div class="portfolio category2" data-cat="category2">
-			                  <div class="portfolio-wrapper">     
-			                    <a href="img/demo_content/image6.jpg" data-lightbox="our-work" data-title="Project Six"><img src="img/demo_content/image6.jpg" alt="" /></a>
-			                    <div class="label">
-			                      <div class="label-text">
-			                        <span>Project Six</span>
-			                        <span class="text-category">Category 2</span>
-			                      </div>
-			                      <div class="label-default"></div>
-			                    </div>
-			                  </div>
-			                </div>  
-			                              
-			                
-			              </div>
+							 	<div class="gallery-item category1">
+							    	<div class="gallery-wrapper">       
+							     		<a href="img/demo_content/image2.jpg" data-lightbox="our-work" data-title="Project Two"><img src="img/demo_content/image2.jpg" alt="" /></a>
+								    	<div class="label">
+								      		<div class="label-text">
+								      		<span>Project Two</span>				   
+								      		</div>
+								      		<div class="label-default"></div>
+							    		</div>
+							    	</div>
+							  	</div>        
+
+							  	<div class="gallery-item category2">
+							    	<div class="gallery-wrapper">       
+							     		<a href="img/demo_content/image3.jpg" data-lightbox="our-work" data-title="Project Three"><img src="img/demo_content/image3.jpg" alt="" /></a>
+								    	<div class="label">
+								      		<div class="label-text">
+								      		<span>Project Three</span>				   
+								      		</div>
+								      		<div class="label-default"></div>
+							    		</div>
+							    	</div>
+							  	</div>        
+
+							  	<div class="gallery-item category1">
+							    	<div class="gallery-wrapper">       
+							     		<a href="img/demo_content/image4.jpg" data-lightbox="our-work" data-title="Project Four"><img src="img/demo_content/image4.jpg" alt="" /></a>
+								    	<div class="label">
+								      		<div class="label-text">
+								      		<span>Project Four</span>				   
+								      		</div>
+								      		<div class="label-default"></div>
+							    		</div>
+							    	</div>
+							  	</div>        
+
+							  	<div class="gallery-item category2 category1">
+							    	<div class="gallery-wrapper">       
+							     		<a href="img/demo_content/image5.jpg" data-lightbox="our-work" data-title="Project Five"><img src="img/demo_content/image5.jpg" alt="" /></a>
+								    	<div class="label">
+								      		<div class="label-text">
+								      		<span>Project Five</span>				   
+								      		</div>
+								      		<div class="label-default"></div>
+							    		</div>
+							    	</div>
+							  	</div>        
+
+							  	<div class="gallery-item category2">
+							    	<div class="gallery-wrapper">       
+							     		<a href="img/demo_content/image6.jpg" data-lightbox="our-work" data-title="Project Six"><img src="img/demo_content/image6.jpg" alt="" /></a>
+								    	<div class="label">
+								      		<div class="label-text">
+								      		<span>Project Six</span>				   
+								      		</div>
+								      		<div class="label-default"></div>
+							    		</div>
+							    	</div>
+							  	</div>        				          				 
+						</div>
 			              </div>
 			              <div class="panel-footer">
 <pre>
-&lt;ul id="filters" class="clearfix"&gt;
-  &lt;li&gt;&lt;span class="filter active" data-filter="category1 category2 category3"&gt;All&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;span class="filter" data-filter="category1"&gt;Category 1&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;span class="filter" data-filter="category2"&gt;Category 2&lt;/span&gt;&lt;/li&gt;
- &lt;/ul&gt;
- &lt;div id="portfoliolist"&gt;
-  &lt;div class="portfolio category1" data-cat="category1"&gt;
-    &lt;div class="portfolio-wrapper"&gt;       
-     &lt;a href="img/image1.jpg" data-lightbox="our-work" data-title="Project One"&gt;&lt;img src="img/image1.jpg" alt="" /&gt;&lt;/a&gt;
-    &lt;div class="label"&gt;
-      &lt;div class="label-text"&gt;
-      &lt;span&gt;Project One&lt;/span&gt;
-      &lt;span class="text-category"&gt;Category 1&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class="label-default"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;        
+&lt;div id="gallery"&gt;
+	&lt;div class="gallery-item category1"&gt;
+		&lt;div class="gallery-wrapper"&gt;       
+			&lt;a href="img/image1.jpg" data-lightbox="our-work" data-title="Project One"&gt;
+				&lt;img src="img/demo_content/image1.jpg" alt="" /&gt;
+			&lt;/a&gt;
+			&lt;div class="label"&gt;
+				&lt;div class="label-text"&gt;
+				&lt;span&gt;Project One&lt;/span&gt;				   
+				&lt;/div&gt;
+				&lt;div class="label-default"&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;        
 
-  &lt;div class="portfolio category1" data-cat="category1"&gt;
-    &lt;div class="portfolio-wrapper"&gt;     
-    &lt;a href="img/image2.jpg" data-lightbox="our-work" data-title="Project Two"&gt;&lt;img src="img/image2.jpg" alt="" /&gt;&lt;/a&gt;
-    &lt;div class="label"&gt;
-      &lt;div class="label-text"&gt;
-       &lt;span&gt;Project Two&lt;/span&gt;
-      &lt;span class="text-category"&gt;Category 1&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class="label-default"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;    
-  
-  &lt;div class="portfolio category1" data-cat="category1"&gt;
-    &lt;div class="portfolio-wrapper"&gt;           
-    &lt;a href="img/image3.jpg" data-lightbox="our-work" data-title="Project Three"&gt;&lt;img src="img/image3.jpg" alt="" /&gt;&lt;/a&gt;
-    &lt;div class="label"&gt;
-      &lt;div class="label-text"&gt;
-      &lt;span&gt;Project Three&lt;/span&gt;
-      &lt;span class="text-category"&gt;Category 1&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class="label-default"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;        
-  
-  &lt;div class="portfolio category2" data-cat="category2"&gt;
-    &lt;div class="portfolio-wrapper"&gt;     
-    &lt;a href="img/image4.jpg" data-lightbox="our-work" data-title="Project Four"&gt;&lt;img src="img/image4.jpg" alt="" /&gt;&lt;/a&gt;
-    &lt;div class="label"&gt;
-      &lt;div class="label-text"&gt;
-      &lt;span&gt;Project Four&lt;/span&gt;
-      &lt;span class="text-category"&gt;Category 2&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class="label-default"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;  
-      
-  &lt;div class="portfolio category1" data-cat="category1"&gt;
-    &lt;div class="portfolio-wrapper"&gt;
-    &lt;a href="img/image5.jpg" data-lightbox="our-work" data-title="Project Five"&gt;&lt;img src="img/image5.jpg" alt="" /&gt;&lt;/a&gt;
-    &lt;div class="label"&gt;
-      &lt;div class="label-text"&gt;
-       &lt;span&gt;Project Five&lt;/span&gt;
-      &lt;span class="text-category"&gt;Category 1&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class="label-default"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;      
-  
-  &lt;div class="portfolio category2" data-cat="category2"&gt;
-    &lt;div class="portfolio-wrapper"&gt;     
-    &lt;a href="img/image6.jpg" data-lightbox="our-work" data-title="Project Six"&gt;&lt;img src="img/image6.jpg" alt="" /&gt;&lt;/a&gt;
-    &lt;div class="label"&gt;
-      &lt;div class="label-text"&gt;
-      &lt;span&gt;Project Six&lt;/span&gt;
-      &lt;span class="text-category"&gt;Category 2&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class="label-default"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;  
-          
-  
-  &lt;/div&gt;
+	&lt;div class="gallery-item category1"&gt;
+		&lt;div class="gallery-wrapper"&gt;       
+			&lt;a href="img/image2.jpg" data-lightbox="our-work" data-title="Project Two"&gt;
+				&lt;img src="img/demo_content/image2.jpg" alt="" /&gt;
+			&lt;/a&gt;
+			&lt;div class="label"&gt;
+				&lt;div class="label-text"&gt;
+				&lt;span&gt;Project Two&lt;/span&gt;				   
+				&lt;/div&gt;
+				&lt;div class="label-default"&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;        
+
+	&lt;div class="gallery-item category2"&gt;
+		&lt;div class="gallery-wrapper"&gt;       
+			&lt;a href="img/image3.jpg" data-lightbox="our-work" data-title="Project Three"&gt;
+				&lt;img src="img/demo_content/image3.jpg" alt="" /&gt;
+			&lt;/a&gt;
+			&lt;div class="label"&gt;
+				&lt;div class="label-text"&gt;
+				&lt;span&gt;Project Three&lt;/span&gt;				   
+				&lt;/div&gt;
+				&lt;div class="label-default"&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;        
+
+	&lt;div class="gallery-item category1"&gt;
+		&lt;div class="gallery-wrapper"&gt;       
+			&lt;a href="img/image4.jpg" data-lightbox="our-work" data-title="Project Four"&gt;
+				&lt;img src="img/demo_content/image4.jpg" alt="" /&gt;
+			&lt;/a&gt;
+			&lt;div class="label"&gt;
+				&lt;div class="label-text"&gt;
+				&lt;span&gt;Project Four&lt;/span&gt;				   
+				&lt;/div&gt;
+				&lt;div class="label-default"&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;        
+
+	&lt;div class="gallery-item category2 category1"&gt;
+		&lt;div class="gallery-wrapper"&gt;       
+			&lt;a href="img/image5.jpg" data-lightbox="our-work" data-title="Project Five"&gt;
+				&lt;img src="img/demo_content/image5.jpg" alt="" /&gt;
+			&lt;/a&gt;
+			&lt;div class="label"&gt;
+				&lt;div class="label-text"&gt;
+				&lt;span&gt;Project Five&lt;/span&gt;				   
+				&lt;/div&gt;
+				&lt;div class="label-default"&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;        
+
+	&lt;div class="gallery-item category2"&gt;
+		&lt;div class="gallery-wrapper"&gt;       
+			&lt;a href="img/image6.jpg" data-lightbox="our-work" data-title="Project Six"&gt;
+				&lt;img src="img/demo_content/image6.jpg" alt="" /&gt;
+			&lt;/a&gt;
+			&lt;div class="label"&gt;
+				&lt;div class="label-text"&gt;
+				&lt;span&gt;Project Six&lt;/span&gt;				   
+				&lt;/div&gt;
+				&lt;div class="label-default"&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;        				          				 
+&lt;/div&gt;
 </pre>   
                 </div>
               </div>
             </div><!-- /.col -->   
-          </div><!-- /.row --> 	      
+          </div><!-- /.row --> 	   
+          <div class="tag-box-primary-2">
+				<h4>Multiple column Layouts</h4>
+				<p>You can change the layout/imaged shoeuthe following classes to the same div as the gallery id'...</p>
+					<pre>
+&lt;!-- To make it a 3 column layout, add the class below --&gt;
+&lt;div id="gallery" class="gallery-col-3"&gt;&lt;/div&gt;
+
+&lt;!-- To make it a 2 column layout, add the class below --&gt;
+&lt;div id="gallery" class="gallery-col-3"&gt;&lt;/div&gt;
+
+&lt;!-- To make it a 2 column layout, add the class below --&gt;
+&lt;div id="gallery" class="gallery-col-3"&gt;&lt;/div&gt;
+					</pre>
+			</div>      
 				</div><!-- /. col-9 -->
 			</div><!-- /. row -->	
 		</div><!-- /. container -->

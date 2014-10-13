@@ -88,4 +88,7 @@
 **Changes**
 
 * Combined all 3rd party .js and .css files into the core bootsassy.js and bootsassy.css files
+* Added a row and column around h2 page headers to keep in container
+* Renamed 'portfolio' classes and ids to 'gallery'
+* Added a submenu for portoflio image galleries as well as 3 layouts * ncluding 1 gallery column to 4 gallery columns
 

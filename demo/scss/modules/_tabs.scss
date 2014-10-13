@@ -1,0 +1,54 @@
+.tab-content{
+	padding:15px;
+	box-sizing:border-box;
+}
+
+.tab-content img{
+	width:100%;
+	margin-bottom:10px;
+}
+
+.tab-content h1,.tab-content h2,.tab-content h3,.tab-content h4{
+	margin:0;
+	padding:5px 0 15px 0;
+}
+
+.tabs-primary .tab-content{
+	@include background-color($primary-color);
+}
+
+.tabs-primary .nav-tabs > li.active > a, 
+.tabs-primary .nav-tabs > li.active > a:hover, 
+.tabs-primary .nav-tabs > li.active > a:focus{
+	@include background-color($primary-color);
+}
+
+.tabs-secondary .tab-content{
+	@include background-color($secondary-color);
+}
+
+.tabs-secondary .nav-tabs > li.active > a, 
+.tabs-secondary .nav-tabs > li.active > a:hover, 
+.tabs-secondary .nav-tabs > li.active > a:focus{
+	@include background-color($secondary-color);
+}
+
+.tabs-dark .tab-content{
+	@include background-color($dark-color);
+}
+
+.tabs-dark .nav-tabs > li.active > a, 
+.tabs-dark .nav-tabs > li.active > a:hover, 
+.tabs-dark .nav-tabs > li.active > a:focus{
+	@include background-color($dark-color);
+}
+
+.tabs-light .tab-content{
+	@include background-color($light-color);
+}
+
+.tabs-light .nav-tabs > li.active > a, 
+.tabs-light .nav-tabs > li.active > a:hover, 
+.tabs-light .nav-tabs > li.active > a:focus{
+	@include background-color($light-color);
+}
