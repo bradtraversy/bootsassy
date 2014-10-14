@@ -135,9 +135,19 @@ section h2{margin-top:5px;}
 /* Section - Showcase */
 
 .section-showcase{
-	height: $showcase-height;
+	min-height: $showcase-height;
 	background: url($showcase-image) center center no-repeat;
 	background-size: cover;
+	color:#fff;
+}
+
+.section-showcase h1{
+	color:#fff;
+
+}
+
+.section-showcase img{
+	width:100%;
 }
 
 /* Section Slogan */
@@ -159,4 +169,14 @@ section h2{margin-top:5px;}
 .section-light .page-header{
 	margin-top:0;
 	padding-top:0;
+}
+
+
+.section-text-button h2{
+	width:85%;
+	float:left;
+}
+
+.section-text-button .btn{
+	float:right;
 }

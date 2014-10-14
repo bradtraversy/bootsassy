@@ -106,7 +106,8 @@
 
 .block-title-1 h1,
 .block-title-1 h2,
-.block-title-1 h3{
+.block-title-1 h3,
+.block-title-1 h4{
 	@include background-color($primary-color);
 	background:darken($primary-color, 3.5%);
 	padding-left:15px;
@@ -115,7 +116,8 @@
 
 .block-title-2 h1,
 .block-title-2 h2,
-.block-title-2 h3{
+.block-title-2 h3,
+.block-title-2 h4{
 	@include background-color($secondary-color);
 	background:darken($secondary-color, 6.5%);
 	padding-left:15px;
@@ -123,7 +125,8 @@
 
 .block-title-3 h1,
 .block-title-3 h2,
-.block-title-3 h3{
+.block-title-3 h3,
+.block-title-3 h4{
 	@include background-color($light-color);
 	background:darken($light-color, 6.5%);
 	padding-left:15px;
@@ -132,7 +135,8 @@
 
 .block-title-4 h1,
 .block-title-4 h2,
-.block-title-4 h3{
+.block-title-4 h3,
+.block-title-4 h4{
 	@include background-color($dark-color);
 	background:darken($dark-color, 6.5%);
 	padding-left:15px;
@@ -140,7 +144,8 @@
 
 .block-title-5 h1,
 .block-title-5 h2,
-.block-title-5 h3{
+.block-title-5 h3,
+.block-title-5 h4{
 	@include add-border(3px,$primary-color,'bottom');
 	border-color:darken($primary-color, 3.5%);
 	color:darken($primary-color, 3.5%);
@@ -149,7 +154,8 @@
 
 .block-title-6 h1,
 .block-title-6 h2,
-.block-title-6 h3{
+.block-title-6 h3,
+.block-title-6 h4{
 	@include add-border(3px,$secondary-color,'bottom');
 	border-color:darken($secondary-color, 3.5%);
 	color:darken($secondary-color, 3.5%);
@@ -157,7 +163,8 @@
 
 .block-title-7 h1,
 .block-title-7 h2,
-.block-title-7 h3{
+.block-title-7 h3,
+.block-title-7 h4{
 	@include add-border(3px,$light-color,'bottom');
 	border-color:darken($light-color, 20%);
 	color:darken($light-color, 20%);
@@ -166,7 +173,8 @@
 
 .block-title-8 h3,
 .block-title-8 h3,
-.block-title-8 h3{
+.block-title-8 h3,
+.block-title-8 h4{
 	@include add-border(3px,$dark-color,'bottom');
 	border-color:darken($dark-color, 3.5%);
 	color:darken($dark-color, 3.5%);

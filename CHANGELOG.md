@@ -92,3 +92,18 @@
 * Renamed 'portfolio' classes and ids to 'gallery'
 * Added a submenu for portoflio image galleries as well as 3 layouts * ncluding 1 gallery column to 4 gallery columns
 
+### 0.10.0 / 10-13-2014 ###
+**Development**
+
+* Blog sidebar - including searchbox, recent post tab module and category list group
+* Finished blog-right-sidebar demo page with posts
+* Finished blog-left-sidebar demo page with posts
+* Finished blog-no-sidebar demo page with posts
+* Finished contact demo page
+* Created the showcase area with a mockup image and copy
+
+
+**Changes**
+
+* Changed markup and style for 'setcion-text-button' to optimize for mobile screens
+* Changed the SASS logo image on the demo homepage

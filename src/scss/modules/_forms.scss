@@ -1,48 +1,133 @@
 
-/* Form Input 1 */
-.form-input-1 .btn, 
-.form-input-1 .btn, 
-.form-input-1 .form-control,
-.form-input-1-border .btn, 
-.form-input-1-border .btn, 
-.form-input-1-border .form-control {
+/* .search-form-a */
+
+.search-form-a .btn, 
+.search-form-a .btn, 
+.search-form-a .form-control,
+.search-form-a-border .btn, 
+.search-form-a-border .btn, 
+.search-form-a-border .form-control {
 	border: 0;
 	height: 38px;
 	margin-top: 0;
+	border-radius:0;
 }
 
-.form-input-1-border input[type='text'],.form-input-1-border input[type='email'],.form-input-1-border input[type='search']{
-	border-top:1px #ccc solid;
-	border-bottom:1px #ccc solid;
-	border-left:1px #ccc solid;
+.search-form-a .form-control{
+	background:#f4f4f4;
+	border:1px solid #eee;
 }
 
-.form-input-1-border .btn{
-	border-top:1px #ccc solid;
-	border-bottom:1px #ccc solid;
-	border-right:1px #ccc solid;
+.search-form-a .btn{
+	border-radius:0;
+	@include background-color($primary-color);
 }
+
+.search-form-primary-a{
+	@extend .search-form-a;
+}
+.search-form-primary-a .btn{
+	@include background-color($primary-color);
+}
+
+.search-form-secondary-a{
+	@extend .search-form-a;
+}
+.search-form-secondary-a .btn{
+	@include background-color($secondary-color);
+}
+
+.search-form-dark-a{
+	@extend .search-form-a;
+}
+.search-form-dark-a .btn{
+	@include background-color($dark-color);
+}
+
+.search-form-light-a{
+	@extend .search-form-a;
+}
+.search-form-light-a .btn{
+	@include background-color($light-color);
+}
+
+
+
 
 /* Searchbox */
 
-.search{
+.search-form-b{
 	width:100%;
 }
 
-.search input[type='search']{
+.search-form-b input[type='search']{
 	border:0;
 	height:50px;
 	width:80%;
-	border:2px solid #00aff0;
+	@include add-border(2px, $primary-color, 'all');
 	font-size:18px;
 	padding-left:10px;
 	padding-bottom:5px;
 }
 
-.search button{
+.search-form-b button{
 	border:0;
 	background:none;
 	padding:0;
 	vertical-align:top;
 	margin-left:-4px;
+	@include background-color($primary-color);
+}
+
+/* Primary */
+.search-form-primary-b{
+	@extend .search-form-b;
+}
+
+.search-form-b input[type='search']{
+	border-color:$primary-color;
+}
+
+.search-form-primary-b button{
+	@include background-color($primary-color);
+}
+
+/* Secondary */
+.search-form-secondary-b{
+	@extend .search-form-b;
+}
+
+.search-form-secondary-b input[type='search']{
+	border-color:$secondary-color;
+}
+
+.search-form-secondary-b button{
+	@include background-color($secondary-color);
+}
+
+/* Dark */
+.search-form-dark-b{
+	@extend .search-form-b;
+}
+
+.search-form-dark-b input[type='search']{
+	border-color:$dark-color;
+}
+
+.search-form-dark-b button{
+	@include background-color($dark-color);
+}
+
+/* Light */
+
+.search-form-light-b{
+	@extend .search-form-b;
+}
+
+.search-form-light-b input[type='search']{
+	border-color:$light-color;
+}
+
+.search-form-light-b button{
+	@include background-color($light-color);
 }

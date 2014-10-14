@@ -84,7 +84,15 @@
 				  </li>
 				  <li><a href="about.html">About</a></li>
 				  <li><a href="services.html">Services</a></li>
-				  <li class="active"><a href="portfolio.html">Portfolio</a></li>
+				  <li class="dropdown active">
+					<a href="portfolio-col-3.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					  <li><a href="portfolio-col-4.html"> Portfolio 4 Column</a></li>
+					  <li><a href="portfolio-col-3.html"> Portfolio 3 Column</a></li>  
+					  <li><a href="portfolio-col-2.html"> Portfolio 2 Column</a></li>     
+					  <li><a href="portfolio-col-1.html"> Portfolio 1 Column</a></li> 
+					</ul>
+				  </li>
 				  <li class="dropdown">
 					<a href="blog-right-sidebar.html" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
@@ -100,14 +108,12 @@
 		</nav>
 	</header>
 
-	<section class="section-dark-e">
+	<section class="section-dark-e section-text-button">
 	    <div class="container">
 	      <div class="row">
-	        <div class="col-md-9">
-				<h2 class="margin-4">All code snippets can be found under the <span class="em-primary">"Features"</span> menu item</h2>
-	        </div>
-	        <div class="col-md-3">
-				<a href="typography.html" class="btn btn-dark btn-border-1 btn-lg pull-right">Read More</a>
+	        <div class="col-md-12">
+				<h2>All code snippets can be found under the <span class="em-primary">"Features"</span> menu item</h2> 
+				<a href="typography.html" class="btn btn-dark btn-border-1 btn-lg">Read More</a>
 	        </div>
 	      </div>
 	    </div>
@@ -259,10 +265,10 @@
 				<div class="col-md-3">
 					<h3>Newsletter</h3>
 					<p>Sign up for our newsletter</p>
-					<form class="form-input-1 input-group">
-						<input type="email" class="form-control" placeholder="Enter Email Address...">
+					<form class="search-form-a input-group">
+						<input type="text" class="form-control" placeholder="Enter email...">
 						<span class="input-group-btn">
-							<button class="btn btn-primary">SUBMIT</button>
+							<button class="btn">Sign Up</button>
 						</span>
 					</form>
 				</div>
