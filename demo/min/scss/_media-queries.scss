@@ -1,0 +1,48 @@
+
+/* Smartphones */
+
+@media(max-width:568px){
+	
+}
+
+/* Tablets */
+
+@media(max-width:768px){
+	.navbar-brand{
+		margin-left:10px;
+	}
+
+	.block{
+		margin-bottom:15px;
+	}
+
+	.section-text-button h2{
+		float:none !important;
+		width:100%;
+		text-align:center;
+	}
+
+	.section-text-button .btn{
+		float:none;
+		margin:auto;
+		display:block;
+		width:60%;
+		margin-top:30px;
+	}
+}
+
+/* Large Screen */
+
+@media(min-width:960px){
+	.sticky{
+		position:fixed;
+		width:200px !important;
+	}
+}
+
+@media(min-width:1180px){
+	.sticky{
+		position:fixed;
+		width:250px !important;
+	}
+}

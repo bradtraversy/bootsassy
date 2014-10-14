@@ -1,0 +1,48 @@
+/* Configuration */
+
+// Load Bootstrap through BootSassy (This will increase the file size of bootsassy.css significantly)
+$load-bootstrap: false;
+
+// Zero out everything
+$reset: false;
+
+// Height of showcase area
+$showcase-height:400px;
+
+// Showcase image location
+$showcase-image:'../img/demo_content/showcase.jpg';
+
+// Amount of padding for all blocks
+$block-padding:15px;
+
+// Width of top and bottom borders in all sections
+$section-border-width:5px;
+
+// Add opacity to navbar
+$transparent-navbar:true;
+
+/* Font Options */
+$main-font: 'Arial', sans-serif;
+$heading-font: 'Arial', sans-serif;
+$main-font-size: 14px;
+
+/* Colors */
+$primary-color: #00aff0;
+$primary-text-color:#ffffff;
+
+$secondary-color: #2f6288;
+$secondary-text-color:#ffffff;
+
+$light-color:#f4f4f4;
+$light-text-color:#666666;
+
+$dark-color:#333333;
+$dark-text-color:#ffffff;
+
+$default-block-color:#ffffff;
+
+/* Context Colors */
+$success-color:#5cb85c;
+$info-color:#5bc0de;
+$warning-color:#f0ad4e;
+$danger-color:#d9534f;

@@ -1,0 +1,61 @@
+
+/* Buttons */
+
+.btn-primary{
+	@include background-color($primary-color);
+}
+
+.btn-primary:hover{
+	background:darken($primary-color, 2.9%);
+	color:#ffffff;
+}
+
+.btn-secondary{
+	@include background-color($secondary-color);
+}
+
+
+.btn-secondary:hover{
+	background:darken($secondary-color, 2.9%);
+	color:#ffffff;
+}
+
+.btn-light{
+	@include background-color($light-color);
+}
+
+.btn-light:hover{
+	background:darken($light-color, 3.9%);
+	color:#666666;
+}
+
+.btn-dark{
+	@include background-color($dark-color);
+}
+
+.btn-dark:hover{
+	background:darken($dark-color, 2.9%);
+	color:#ffffff;
+}
+
+/* Button Borders */
+
+.btn-border-1{
+	border:2px $primary-color solid;
+}
+
+.btn-border-2{
+	border:2px $secondary-color solid;
+}
+
+.btn-border-3{
+	border:2px $light-color solid;
+}
+
+.btn-border-4{
+	border:2px $dark-color solid;
+}
+
+.btn-no-radius{
+	border-radius:0;
+}

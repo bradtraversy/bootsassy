@@ -1,0 +1,52 @@
+img{
+	width:100%;
+}
+.img-border{
+	@include add-border(2px, #aaa, 'all');
+}
+
+.img-border-space{
+	@include add-border(1px, #aaa, 'all');
+	padding:3px;
+}
+
+.img-border-primary{
+	@extend .img-border;
+	border-color:$primary-color;
+}
+
+.img-border-secondary{
+	@extend .img-border;
+	border-color:$secondary-color;
+}
+
+.img-border-dark{
+	@extend .img-border;
+	border-color:$dark-color;
+}
+
+.img-border-light{
+	@extend .img-border;
+	border-color:$light-color;
+}
+
+
+.img-border-space-primary{
+	@extend .img-border-space;
+	border-color:$primary-color;
+}
+
+.img-border-space-secondary{
+	@extend .img-border-space;
+	border-color:$secondary-color;
+}
+
+.img-border-space-dark{
+	@extend .img-border-space;
+	border-color:$dark-color;
+}
+
+.img-border-space-light{
+	@extend .img-border-space;
+	border-color:$light-color;
+}

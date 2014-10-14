@@ -1,0 +1,44 @@
+body {
+	font-family: $main-font;
+	font-size: $main-font-size;
+  	padding-top: 70px;
+}
+
+a, a:hover, a:visited, a:active{
+	text-decoration: none;
+}
+
+.pull-left{
+	margin-right:15px;
+}
+
+.pull-right{
+	margin-left:15px;
+}
+
+pre{
+	margin-top:10px;
+	min-height:130px;
+}
+
+h3{
+	font-size:22px;
+}
+
+h4{
+	margin-top:20px;
+}
+
+ul,li{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.scroller img{
+	width:100%;
+}
+
+.module{
+	margin:30px 0;
+}

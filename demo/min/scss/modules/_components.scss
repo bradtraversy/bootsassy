@@ -1,0 +1,152 @@
+/* Panels, Wells, Alerts, Progress Bars */
+
+.panel-primary .panel-heading,
+.well-primary,
+.alert-primary,
+.progress-primary{
+	@include background-color($primary-color);
+}
+
+.panel-primary{
+	@include add-border(1px, $primary-color, all);
+}
+
+.panel-secondary .panel-heading,
+.well-secondary,
+.alert-secondary,
+.progress-secondary{
+	@include background-color($secondary-color);
+}
+
+.panel-secondary{
+	@include add-border(1px, $secondary-color, all);
+}
+
+.panel-light .panel-heading,
+.well-light,
+.alert-light,
+.progress-light{
+	@include background-color($light-color);
+}
+
+.panel-light{
+	@include add-border(1px, $light-color, all);
+}
+
+.panel-dark .panel-heading,
+.well-dark,
+.alert-dark,
+.progress-dark{
+	@include background-color($dark-color);
+}
+
+.panel-dark{
+	@include add-border(1px, $dark-color, all);
+}
+
+.panel-success .panel-heading,
+.well-success,
+.alert-success,
+.progress-success{
+	@include background-color($success-color);
+}
+
+.panel-success{
+	@include add-border(1px, $success-color, all);
+}
+
+.panel-info .panel-heading,
+.well-info,
+.alert-info,
+.progress-info{
+	@include background-color($info-color);
+}
+
+.panel-info{
+	@include add-border(1px, $info-color, all);
+}
+
+.panel-warning .panel-heading,
+.well-warning,
+.alert-warning,
+.progress-warning{
+	@include background-color($warning-color);
+}
+
+.panel-warning{
+	@include add-border(1px, $warning-color, all);
+}
+
+.panel-danger .panel-heading,
+.well-danger,
+.alert-danger,
+.progress-danger{
+	@include background-color($danger-color);
+}
+
+.panel-danger{
+	@include add-border(1px, $danger-color, all);
+}
+
+
+/* Labels */
+
+.label-primary{
+	background-color:$primary-color !important;
+}
+
+.label-secondary{
+	background-color:$secondary-color !important;
+}
+
+.label-dark{
+	background-color:$dark-color !important;
+}
+
+.label-light{
+	background-color:$light-color !important;
+	color:#666;
+}
+
+
+/* Wells */
+
+.well-sharp{
+	border-radius:0;
+}
+
+.well-no-border{
+	border:0;
+}
+
+.well-white{
+	background:none;
+}
+
+.pagination > li > a, .pagination > li > span{
+	color:$primary-color;
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus{
+	color:$primary-color;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+	@include background-color($primary-color);
+	@include add-border(1px,darken($primary-color,10%),all);
+}
+
+/* Progress Bars */
+.progress {
+	border-radius:0;
+}
+
+.progress-rounded{
+	@extend .progress;
+	@include border-radius(5px);
+}
+
+.progress-thin{
+	@extend .progress;
+	height:5px;
+}

@@ -1,0 +1,40 @@
+/* Blog Meta */
+
+.meta{
+	position:relative;
+	padding:10px;
+	background:#f4f4f4;
+	margin-bottom:10px;
+	@include add-border(3px, $primary-color, 'left');
+	overflow:hidden;
+}
+
+.post-item{
+	margin-bottom:30px;
+	padding-bottom:40px;
+	border-bottom:1px solid #ccc;
+}
+
+.post-item:last-child{
+	border:0;
+}
+
+.post-item p{
+	margin:20px 0;
+}
+
+.comment-number{
+	width:48px;
+	height:48px;
+	background:url(../img/comment.png) no-repeat;
+	float:right;
+	position:relative;
+}
+
+.comment-number span{
+	color:#fff;
+	font-size:130%;
+	position:absolute;
+	top:10px;
+	right:20px;
+}

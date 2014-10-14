@@ -1,0 +1,262 @@
+[class^='list-background'],
+[class^='list-numbers'],
+.accordian-list,
+.list-large{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.list-large{
+	font-size:150%;
+	line-height:1.7em;
+}
+
+.list-border-bottom{
+	margin:0;
+	padding:0;
+	max-width:400px;
+}
+
+.list-border-bottom li{
+	list-style:none;
+	border-bottom:1px #ccc solid;
+	line-height:2.4em;
+}
+
+/* List Numbers */
+
+.list-numbers li {
+	counter-increment: myIndex;
+	position: relative;
+	margin-bottom: 20px;
+	padding: 10px 0 10px 80px;
+}
+
+.list-numbers li:before {
+	content: counter(myIndex);
+	font-size: 2em;
+	padding: 10px 15px;
+	@include add-border(1px, $primary-color, all);
+	color: $primary-color;
+	border-radius: 500px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+.list-numbers-fill li {
+	counter-increment: myIndex;
+	position: relative;
+	margin-bottom: 20px;
+	padding: 10px 0 10px 80px;
+}
+
+.list-numbers-fill li:before {
+	content: counter(myIndex);
+	font-size: 2em;
+	padding: 10px 15px;
+	@include add-border(1px, $primary-color, all);
+	@include background-color($primary-color);
+	color: $primary-text-color;
+	border-radius: 500px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+.list-numbers-dark,.list-numbers-primary,.list-numbers-secondary,.list-numbers-light{
+	@extend .list-numbers;
+}
+
+.list-numbers-primary li:before {
+	border-color:$primary-color;
+	color:$primary-color;
+}
+
+.list-numbers-secondary li:before {
+	border-color:$secondary-color;
+	color:$secondary-color;
+}
+
+.list-numbers-dark li:before {
+	border-color:$dark-color;
+	color:$dark-color;
+}
+
+.list-numbers-light li:before {
+	border-color:$light-color;
+	color:$light-color;
+}
+
+.list-numbers-dark-fill,.list-numbers-primary-fill,.list-numbers-secondary-fill,.list-numbers-light-fill{
+	@extend .list-numbers-fill;
+}
+
+.list-numbers-primary-fill li:before {
+	border-color:$primary-color;
+	background-color:$primary-color;
+}
+
+.list-numbers-secondary-fill li:before {
+	border-color:$secondary-color;
+	background-color:$secondary-color;
+}
+
+.list-numbers-dark-fill li:before {
+	border-color:$dark-color;
+	background-color:$dark-color;
+}
+
+.list-numbers-light-fill li:before {
+	border-color:$light-color;
+	background-color:$light-color;
+}
+
+
+/* List Background */
+
+
+[class^='list-background'] li{
+	padding:7px 10px;
+	margin-bottom:4px;
+}
+
+.list-background li{
+	@include background-color(#ccc);
+}
+.list-background li:hover{
+	@include background-color(darken(#ccc,10%));
+}
+
+
+.list-background-primary li{
+	@include background-color($primary-color);
+}
+.list-background-primary li:hover{
+	@include background-color(darken($primary-color,10%));
+}
+
+.list-background-secondary li{
+	@include background-color($secondary-color);
+}
+.list-background-secondary li:hover{
+	@include background-color(darken($secondary-color,10%));
+}
+
+.list-background-light li{
+	@include background-color($light-color);
+}
+.list-background-light li:hover{
+	@include background-color(darken($light-color,10%));
+}
+
+.list-background-dark li{
+	@include background-color($dark-color);
+}
+.list-background-dark li:hover{
+	@include background-color(darken($dark-color,10%));
+}
+
+/* Accordian Lists */
+
+.accordian-list{
+	border:#ccc solid 1px;
+}
+
+.accordian-list li{
+	list-style:none;
+	line-height:2em;
+	border-bottom:#ccc solid 1px;
+	font-size:100%;
+	color:#666;
+}
+
+.accordian-list li.active{
+	@include background-color($primary-color);
+}
+
+.accordian-list li.active a{
+	color:#fff;
+}
+
+.accordian-list > li:last-child{
+	border-bottom:0;
+}
+
+.accordian-list li a{
+	display:block;
+	color:#666;
+	padding:2px 0 2px 15px;
+}
+
+.accordian-list li:hover,.accordian-list a:hover,.accordian-list li:hover a{
+	@include background-color($dark-color);
+}
+
+.accordian-list li.collapse-heading{
+	padding:2px 0 2px 15px;
+}
+
+.accordian-list .collapse li{
+	background:#f4f4f4 !important;
+}
+
+.accordian-list i{
+	float:right;
+	margin-right:10px;
+	margin-top:7px;
+}
+
+.accordian-list ul{
+	padding-left:0;
+}
+
+/* List Groups */
+
+a.list-group-item.active, 
+a.list-group-item.active:hover, 
+a.list-group-item.active:focus{
+	@include background-color($primary-color);
+
+}
+
+.list-group-dark a.list-group-item.active, 
+.list-group-dark a.list-group-item.active:hover, 
+.list-group-dark a.list-group-item.active:focus{
+	border-color:#2a272e;
+	background-color:#2a272e;
+}
+
+.badge-primary,.list-group-item-primary,a.list-group-item-primary{
+	@include background-color($primary-color);
+}
+
+.badge-secondary,.list-group-item-secondary,a.list-group-item-secondary{
+	@include background-color($secondary-color);
+}
+
+.badge-dark,.list-group-item-dark,a.list-group-item-dark{
+	@include background-color($dark-color);
+}
+
+.badge-light,.list-group-item-light,a.list-group-item-light{
+	@include background-color($light-color);
+}
+
+.badge-sharp{
+	border-radius:0;
+}
+
+.show-grid [class^=col-] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #f4f4f4;
+	border: 1px solid #ddd;
+}
+
+
+ul.blogroll li{
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	padding:5px 0;
+}

@@ -1,0 +1,129 @@
+
+/* Tab Content */
+
+.tab-content{
+	padding:15px;
+	box-sizing:border-box;
+	border:0;
+	@include border-radius(0);
+}
+
+.tab-content img{
+	width:100%;
+	margin-bottom:10px;
+}
+
+.tab-content h1,.tab-content h2,.tab-content h3,.tab-content h4{
+	margin:0;
+	padding:5px 0 15px 0;
+}
+
+
+/* Primary */
+
+.tabs-primary .tab-content{
+	@include background-color($primary-color);
+	border:0;
+	@include border-radius(0);
+}
+
+.tabs-primary .nav-tabs > li.active > a, 
+.tabs-primary .nav-tabs > li.active > a:hover, 
+.tabs-primary .nav-tabs > li.active > a:focus{
+	@include background-color($primary-color);
+	border:0;
+	@include border-radius(0);
+}
+
+
+/* Secondary */
+
+.tabs-secondary .tab-content{
+	@include background-color($secondary-color);
+	border:0;
+	@include border-radius(0);
+}
+
+.tabs-secondary .nav-tabs > li.active > a, 
+.tabs-secondary .nav-tabs > li.active > a:hover, 
+.tabs-secondary .nav-tabs > li.active > a:focus{
+	@include background-color($secondary-color);
+	border:0;
+	@include border-radius(0);
+}
+
+
+/* Dark */
+
+.tabs-dark .tab-content{
+	@include background-color($dark-color);
+	border:0;
+	@include border-radius(0);
+}
+
+.tabs-dark .nav-tabs > li.active > a, 
+.tabs-dark .nav-tabs > li.active > a:hover, 
+.tabs-dark .nav-tabs > li.active > a:focus{
+	@include background-color($dark-color);
+	border:0;
+	@include border-radius(0);
+}
+
+/* Light */
+
+.tabs-light .tab-content{
+	@include background-color($light-color);
+	border:0;
+	@include border-radius(0);
+}
+
+.tabs-light .nav-tabs > li.active > a, 
+.tabs-light .nav-tabs > li.active > a:hover, 
+.tabs-light .nav-tabs > li.active > a:focus{
+	@include background-color($light-color);
+	border:0;
+	@include border-radius(0);
+}
+
+/* Grey No Border */
+
+.tabs-grey .tab-content{
+	@include background-color(#F7F7F7);
+	border:0;
+	@include border-radius(0);
+}
+
+.tabs-grey .nav-tabs{
+	border:0;
+}
+
+.tabs-grey .nav-tabs li{
+	margin-bottom:-3px;
+	@include border-radius(0);
+}
+
+.tabs-grey .nav-tabs > li.active > a, 
+.tabs-grey.nav-tabs > li.active > a:hover, 
+.tabs-grey .nav-tabs > li.active > a:focus{
+	@include background-color(#F7F7F7);
+	border:0;
+	@include border-radius(0);
+}
+
+.tabs-grey .nav-tabs,.tabs-primary .nav-tabs,.tabs-secondary .nav-tabs,.tabs-dark .nav-tabs,.tabs-light .nav-tabs {
+	border:0;
+}
+
+.nav-tabs > li > a{
+	border:0;
+	@include border-radius(0);
+}
+
+.tabs small{
+	display:block;
+	color:#666;
+}
+
+.tabs li{
+	line-height:2em;
+}

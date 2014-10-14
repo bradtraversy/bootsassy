@@ -1,0 +1,19 @@
+footer.footer-main{
+	padding:50px 0;
+	@include background-color($secondary-color);
+}
+
+footer.footer-main h3{
+	@include add-border($light-color,1px,bottom);
+	padding-bottom:10px;
+}
+
+footer.footer-main ul{
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+
+footer.footer-main li{
+	line-height:1.7em;
+}

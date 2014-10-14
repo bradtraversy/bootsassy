@@ -1,0 +1,104 @@
+
+
+/* Navbar */
+
+.navbar{
+	min-height:70px;
+	background:#fff;
+	@if $transparent-navbar == true{
+		@include background-opacity(light,0.9);
+	}
+	padding-top:10px;
+	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,.navbar ul li a:hover {
+	@include background-color($primary-color);
+}
+
+.navbar ul li a:hover,.open{
+	background:#f8f8f8 !important;
+	color:#666 !important;
+}
+
+.navbar ul li li a:hover{
+	color:#fff !important;
+	background:$primary-color !important;
+}
+
+.dropdown-submenu{
+    position:relative;
+}
+ 
+.dropdown-submenu > .dropdown-menu{
+    top:0;
+    left:100%;
+    margin-top:-6px;
+    margin-left:-1px;
+    @include border-radius(0);
+}
+ 
+.dropdown-submenu:hover > .dropdown-menu{
+    display:block;
+}
+ 
+.dropdown-submenu > a:after{
+    display:block;
+    content:" ";
+    float:right;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:5px 0 5px 5px;
+    border-left-color:#cccccc;
+    margin-top:5px;
+    margin-right:-10px;
+}
+ 
+.dropdown-submenu:hover > a:after{
+    border-left-color:#ffffff;
+}
+ 
+.dropdown-submenu .pull-left{
+    float:none;
+}
+ 
+.dropdown-submenu.pull-left > .dropdown-menu{
+    left:-100%;
+    margin-left:10px;
+    -webkit-border-radius:6px 0 6px 6px;
+    -moz-border-radius:6px 0 6px 6px;
+    border-radius:6px 0 6px 6px;
+}
+
+
+/* Hover Dropdown - Large Screen Only */
+
+@media(min-width:768px){
+	.navbar .dropdown:hover > .dropdown-menu {
+	    display: block;
+	 }
+
+	.navbar .dropdown-menu{
+		border-color:#e7e7e7;
+		background-color:#f8f8f8;
+		font-size:14px;
+		color:#666;
+		min-width:220px;
+		box-shadow:0;
+		border-radius:0;
+	}
+
+	.navbar .dropdown-menu li a{
+		padding:7px 0 7px 15px;
+		@include add-border(1px, #cccccc, bottom);
+		color:#666;
+		padding-right:30px;
+		border-left:4px #f4f4f4 solid;
+	}
+
+	.navbar .dropdown-menu li a:hover{
+		@include add-border(4px, $secondary-color, left);
+	}
+}
